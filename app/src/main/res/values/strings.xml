@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Beogradski Sindikat</string>
+    <string-array name="imena">
+        <item>"Fedja Dimović"</item>
+        <item>"Ognjen Janković</item>
+    </string-array>
+</resources>

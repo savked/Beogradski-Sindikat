@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\97cd6b44c7be3a6c011910816240d75daf7c764d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_d09341d7faadc2cfb20a6bb03f7cf2030b3714c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\92509c6b5de711e18516515e512213edfedbe837\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_cfc5d64cdee4e5caa89de4c404c53c9e1e11251e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\190fd7b22f2451e0ab16b3c0aaf055900368be56\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_39c693ea68c66f152a3de07cff9d890b4ed7f982.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_9c921926ceba67ac6e4ffea5c5bea99d72aff798.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\18f357c19110a47ba43d086dde0fe87b3888baf3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_e485637dcf6110d33a0a01b159d4dad8b240df52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\04ef6ae7b1bf09b8fbafb4eb8927626b13b9c3a0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_f502e451a306b202704d8379ea93dedcd5b26b4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\7b5b8b4a2064221c00c14f37e4c323be62da7fba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_16f51c1b4fbbda58eb11409175bb42ee8d1ab712.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\f1527cc0ec814be2d0615af86a6e282a8c552e62\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_c8f9f4ea4306bf3ab07f7d6771a5818a68b0a43e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\b7c80193905ef09a6f0c74f9fc53e3956dde77c9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_f240e867c99ec55c099696d3e771d164b2ee780d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_bfbf69dd41d161ffee65ffffb4dfec15f3b3882d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\384eef9e7a3c2d97f9919f79a2902daa877f7bf9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_f276e2123649fa26da7b571f7fdb532440c81bf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\e2c2b673ddc5cd0f2fbb98291723a26e1808baae\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_4a0f6c29fb9b2fed7ba3c05b5ab7e46c5c9aeedc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\0f1ab1af6786cf48c300049ccbbd66e0590b8080\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_2826dce1030d2ef355ec478b3e36bce86c35995b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Savke\.android\build-cache\3d3fd149e0306c30bf4b9a47847c1f34353ddbfb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Savke\Desktop\Programiranje\BeogradskiSindikat\app\build\intermediates\pre-dexed\debug\classes_fbfe52f922eb5ffc557aaf22087de857fb60bf97.jar" />
+    </item>
+
+</items>
