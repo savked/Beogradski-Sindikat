@@ -30,6 +30,10 @@ public class HomeActivity extends AppCompatActivity {
                     Intent it = new Intent(HomeActivity.this, ClanoviActivity.class);
                     startActivity(it);
                 }
+                if(i == 4){
+                    Intent it = new Intent( HomeActivity.this, OAplikaciji.class);
+                    startActivity(it);
+                }
             }
         });
     }

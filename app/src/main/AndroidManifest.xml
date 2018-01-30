@@ -17,7 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".ClanoviActivity" />
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".OAplikaciji"
+            android:label="@string/title_activity_oaplikaciji"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
