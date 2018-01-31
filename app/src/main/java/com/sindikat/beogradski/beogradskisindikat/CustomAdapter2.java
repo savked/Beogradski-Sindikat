@@ -26,22 +26,19 @@ class CustomAdapter2 extends ArrayAdapter<String> {
         tv.setText(single);
         switch (position) {
             case 0:
-                iv.setImageResource(R.drawable.fedja);
+                iv.setImageResource(R.drawable.clanovi);
                 break;
             case 1:
-                iv.setImageResource(R.drawable.ogi);
+                iv.setImageResource(R.drawable.muzika);
                 break;
             case 2:
-                iv.setImageResource(R.drawable.skabo);
+                iv.setImageResource(R.drawable.slike);
                 break;
             case 3:
-                iv.setImageResource(R.drawable.sefsale);
+                iv.setImageResource(R.drawable.nastupi);
                 break;
             case 4:
-                iv.setImageResource(R.drawable.marko);
-                break;
-            case 5:
-                iv.setImageResource(R.drawable.dare);
+                iv.setImageResource(R.drawable.oaplikaciji);
                 break;
         }
         return customView;

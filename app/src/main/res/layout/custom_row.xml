@@ -14,9 +14,10 @@
     <TextView
         android:id="@+id/textViewCustom"
         android:layout_width="wrap_content"
-        android:textColor="@color/bsNarandzasta"
-        android:textSize="17dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
-        android:text="Text View" />
+        android:text="Text View"
+        android:textColor="@color/bsNarandzasta"
+        android:textSize="17dp" />
 </LinearLayout>
