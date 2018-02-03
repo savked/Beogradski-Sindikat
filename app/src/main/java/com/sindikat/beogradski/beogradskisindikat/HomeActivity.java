@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -29,10 +28,17 @@ public class HomeActivity extends AppCompatActivity {
                 if(i == 0){
                     Intent it = new Intent(HomeActivity.this, ClanoviActivity.class);
                     startActivity(it);
+                    // PROMENITI ANIMACIJU
+                    overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+                }
+                if(i == 2){
+                    Intent it = new Intent( HomeActivity.this, Slike.class);
+                    startActivity(it);
                 }
                 if(i == 4){
                     Intent it = new Intent( HomeActivity.this, OAplikaciji.class);
                     startActivity(it);
+                    overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                 }
             }
         });

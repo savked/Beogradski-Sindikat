@@ -17,7 +17,7 @@ class CustomAdapter2 extends ArrayAdapter<String> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inf = LayoutInflater.from(getContext());
-        View customView = inf.inflate(R.layout.custom_row, parent, false);
+        View customView = inf.inflate(R.layout.custom_rowhome, parent, false);
 
         String single = getItem(position);
         TextView tv = (TextView) customView.findViewById(R.id.textViewCustom);

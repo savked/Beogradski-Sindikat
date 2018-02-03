@@ -14,5 +14,10 @@ public class OAplikaciji extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oaplikaciji);
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+    }
 
 }
