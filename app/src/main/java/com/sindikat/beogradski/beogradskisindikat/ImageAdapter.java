@@ -1,6 +1,9 @@
 package com.sindikat.beogradski.beogradskisindikat;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -39,13 +42,16 @@ public class ImageAdapter extends BaseAdapter {
         if (convertView == null) {
             // if it's not recycled, initialize some attributes
             imageView = new ImageView(mContext);
+
             imageView.setLayoutParams(new GridView.LayoutParams(360, 640));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+
         } else {
             imageView = (ImageView) convertView;
         }
 
         imageView.setImageResource(imageIDs[position]);
+
         return imageView;
     }
 }
