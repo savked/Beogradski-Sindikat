@@ -23,7 +23,8 @@
             android:label="@string/title_activity_oaplikaciji"
             android:theme="@style/AppTheme" />
         <activity android:name=".Slike" />
-        <activity android:name=".SlikeDownload"></activity>
+        <activity android:name=".SlikeDownload" />
+        <activity android:name=".Muzika"></activity>
     </application>
 
 </manifest>
