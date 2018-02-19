@@ -36,14 +36,12 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="90dp"
-        app:srcCompat="@drawable/bs_shtit"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="5dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bs_shtit" />
 
 </android.support.constraint.ConstraintLayout>
