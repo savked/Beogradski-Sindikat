@@ -31,6 +31,10 @@ public class HomeActivity extends AppCompatActivity {
                     // PROMENITI ANIMACIJU
                     overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
                 }
+                if(i == 1){
+                    Intent it = new Intent(HomeActivity.this, Muzika.class);
+                    startActivity(it);
+                }
                 if(i == 2){
                     Intent it = new Intent( HomeActivity.this, Slike.class);
                     startActivity(it);
