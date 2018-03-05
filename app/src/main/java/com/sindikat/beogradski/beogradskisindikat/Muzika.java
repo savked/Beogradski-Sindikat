@@ -13,6 +13,10 @@ import android.widget.TextView;
 public class Muzika extends AppCompatActivity {
 
     Button playButton;
+    Button repeatButton;
+    Button shuffleButton;
+    Button backButton;
+    Button nextButton;
     SeekBar positionBar;
     TextView elapsedTimeLabel;
     TextView remainingTimeLabel;
@@ -27,12 +31,58 @@ public class Muzika extends AppCompatActivity {
         setContentView(R.layout.activity_muzika);
 
         playButton = (Button) findViewById(R.id.playButton);
+        repeatButton = (Button) findViewById(R.id.repeatButton);
+        shuffleButton = (Button) findViewById(R.id.shuffleButton);
+        backButton = (Button) findViewById(R.id.backButton);
+        nextButton = (Button) findViewById(R.id.nextButton);
         elapsedTimeLabel = (TextView) findViewById(R.id.timeStart);
         remainingTimeLabel = (TextView) findViewById(R.id.timeEnd);
 
+        // Handling repeat
+        repeatButton.setOnClickListener(new View.OnClickListener() {
+            Boolean repeatEnabled = false;
+            @Override
+            public void onClick(View view) {
+                if(!repeatEnabled) {
+                    mediaPlayer.setLooping(true);
+                    repeatButton.setBackgroundResource(R.drawable.repeat);
+                    repeatButton.setAlpha(1.0f);
+
+                    repeatEnabled = true;
+                }
+                else{
+                    mediaPlayer.setLooping(false);
+                    repeatButton.setBackgroundResource(R.drawable.repeatdisabled);
+                    repeatButton.setAlpha(0.5f);
+
+                    repeatEnabled = false;
+                }
+            }
+        });
+
+        // Handling shuffle
+        shuffleButton.setOnClickListener(new View.OnClickListener() {
+            Boolean shuffleEnabled = false;
+            @Override
+            public void onClick(View view) {
+                if(!shuffleEnabled) {
+                    // HANDLE SHUFFLING SONGS
+                    shuffleButton.setBackgroundResource(R.drawable.shuffle);
+                    shuffleButton.setAlpha(1.0f);
+
+                    shuffleEnabled = true;
+                }
+                else{
+                    shuffleButton.setBackgroundResource(R.drawable.shuffledisabled);
+                    shuffleButton.setAlpha(0.5f);
+
+                    shuffleEnabled = false;
+                }
+            }
+        });
+
         // Media Player
         mediaPlayer = MediaPlayer.create(this, R.raw.test);
-        mediaPlayer.setLooping(true);
         mediaPlayer.seekTo(0);
         totalTime = mediaPlayer.getDuration();
 

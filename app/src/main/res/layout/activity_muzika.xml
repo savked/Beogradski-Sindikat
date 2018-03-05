@@ -13,11 +13,10 @@
         android:layout_height="250dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:src="@drawable/test"
+        android:layout_marginTop="40dp"
         android:scaleType="fitXY"
+        android:src="@drawable/test"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,23 +24,16 @@
         android:id="@+id/positionBar"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:maxHeight="10dp"
-        android:minHeight="10dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="30dp"
+        android:maxHeight="6dp"
+        android:minHeight="6dp"
         android:progressDrawable="@drawable/seekbar_style"
         android:thumb="@drawable/custom_thumb"
-        app:layout_constraintBottom_toTopOf="@+id/playButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/songImage"
-        app:layout_constraintVertical_bias="0.551" />
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/songImage" />
+        app:layout_constraintTop_toBottomOf="@+id/songName" />
 
     <TextView
         android:id="@+id/timeStart"
@@ -49,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="5dp"
-        android:text="0:11"
+        android:text="0:00"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/positionBar" />
@@ -60,21 +52,84 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginTop="5dp"
-        android:text="-1:49"
+        android:text="2:00"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/positionBar" />
 
     <Button
         android:id="@+id/playButton"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="45dp"
         android:background="@drawable/play"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/songImage"/>
+        app:layout_constraintTop_toBottomOf="@+id/positionBar" />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Beogradski Sindikat - Dolazi Sindikat"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songImage" />
+
+    <Button
+        android:id="@+id/repeatButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="59dp"
+        android:alpha=".5"
+        android:background="@drawable/repeatdisabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nextButton"
+        app:layout_constraintTop_toBottomOf="@+id/positionBar" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/positionBar" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toStartOf="@+id/playButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/positionBar" />
+
+    <Button
+        android:id="@+id/shuffleButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/shuffledisabled"
+        android:alpha=".5"
+        app:layout_constraintEnd_toStartOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/positionBar" />
 
 </android.support.constraint.ConstraintLayout>
