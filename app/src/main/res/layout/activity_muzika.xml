@@ -7,6 +7,7 @@
     android:background="@color/colorPrimaryDark"
     tools:context="com.sindikat.beogradski.beogradskisindikat.Muzika">
 
+
     <ImageView
         android:id="@+id/songImage"
         android:layout_width="250dp"
@@ -39,10 +40,12 @@
         android:id="@+id/timeStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
         android:text="0:00"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/timeEnd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/positionBar" />
 
@@ -50,10 +53,12 @@
         android:id="@+id/timeEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="280dp"
         android:layout_marginTop="5dp"
         android:text="2:00"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/positionBar" />
 
