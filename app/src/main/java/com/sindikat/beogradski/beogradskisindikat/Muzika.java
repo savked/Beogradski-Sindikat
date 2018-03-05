@@ -1,14 +1,28 @@
 package com.sindikat.beogradski.beogradskisindikat;
 
+import android.media.AudioManager;
+import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageException;
+import com.google.firebase.storage.StorageReference;
+
+import android.net.Uri;
+
+import java.io.IOException;
 
 public class Muzika extends AppCompatActivity {
 
@@ -20,10 +34,11 @@ public class Muzika extends AppCompatActivity {
     SeekBar positionBar;
     TextView elapsedTimeLabel;
     TextView remainingTimeLabel;
-    MediaPlayer mediaPlayer;
+    TextView songNameTV;
+
+    MediaPlayer mediaPlayer = new MediaPlayer();
 
     int totalTime;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +52,7 @@ public class Muzika extends AppCompatActivity {
         nextButton = (Button) findViewById(R.id.nextButton);
         elapsedTimeLabel = (TextView) findViewById(R.id.timeStart);
         remainingTimeLabel = (TextView) findViewById(R.id.timeEnd);
+        songNameTV = (TextView) findViewById(R.id.songName);
 
         // Handling repeat
         repeatButton.setOnClickListener(new View.OnClickListener() {
@@ -82,9 +98,9 @@ public class Muzika extends AppCompatActivity {
         });
 
         // Media Player
-        mediaPlayer = MediaPlayer.create(this, R.raw.test);
+        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        fetchAudioUrlFromFirebase();
         mediaPlayer.seekTo(0);
-        totalTime = mediaPlayer.getDuration();
 
         // Position Bar
         positionBar = (SeekBar) findViewById(R.id.positionBar);
@@ -141,8 +157,41 @@ public class Muzika extends AppCompatActivity {
         });
 
     }
+    // Getting the song from Firebase Storage
+    private void fetchAudioUrlFromFirebase() {
+        final FirebaseStorage storage = FirebaseStorage.getInstance();
+        // Create a storage reference from our app
+        StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Muzika").child("Beogradski Sindikat - Dolazi Sindikat.mp3");
 
-        private Handler handler = new Handler(){
+        String songName = storageRef.getName();///////////////////////////// Getting song name from the Firebase Storage
+        songNameTV.setText(songName.substring(0, songName.length() - 4)); // Removing '.mp3' from the name
+
+                storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                try {
+                    // Download url of file
+                    final String url = uri.toString();
+                    mediaPlayer.setDataSource(url);
+                    // Wait for media player to get prepare
+                    mediaPlayer.prepareAsync();
+                    totalTime = mediaPlayer.getDuration();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.i("TAG", e.getMessage());
+                    }
+                });
+
+    }
+
+    private Handler handler = new Handler(){
             @Override
             public void handleMessage(Message msg) {
                 int currentPosition = msg.what;

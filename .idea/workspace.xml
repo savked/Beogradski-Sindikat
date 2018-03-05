@@ -23,49 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99698c61-c597-49d9-a0a6-847f7ae34e3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/repeat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/repeatdisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shuffle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/shuffledisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/repeat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/repeatdisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shuffle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/shuffledisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/repeat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/repeatdisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shuffle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/shuffledisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/repeat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/repeatdisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/shuffle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/shuffledisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/repeat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/repeatdisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/shuffle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/shuffledisabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pause.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pause.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/play.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/play.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/pause.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/pause.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/play.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/play.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/pause.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/pause.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/play.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/play.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pause.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pause.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/play.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/play.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/pause.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/pause.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/play.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/play.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/custom_thumb.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/custom_thumb.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml" />
     </list>
     <ignored path="Beogradski Sindikat.iws" />
@@ -111,21 +70,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Muzika.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Muzika.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="69" column="74" lean-forward="false" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
-              <folding />
+            <state relative-caret-position="459">
+              <caret line="175" column="24" lean-forward="false" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4822#5301#0" expanded="true" />
+                <element signature="e#5300#5301#0" expanded="true" />
+                <element signature="e#5986#6549#0" expanded="true" />
+                <element signature="e#6548#6549#0" expanded="true" />
+                <element signature="e#6589#6804#0" expanded="true" />
+                <element signature="e#6803#6804#0" expanded="true" />
+                <element signature="e#6845#7395#0" expanded="true" />
+                <element signature="e#7394#7395#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_muzika.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_muzika.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
+            <state relative-caret-position="280">
+              <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -168,6 +137,11 @@
         <option value="resourceFile" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>onPrepa</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1955,8 +1929,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/border_shadow.xml" />
         <option value="$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-26/android.jar!/android/os/Handler.class" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/custom_thumb.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java" />
       </list>
     </option>
   </component>
@@ -2178,7 +2152,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520259641032" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520262235377" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2226,7 +2200,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520259641032" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520262235377" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2409,7 +2383,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520259641033" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520262235378" />
       </method>
     </configuration>
     <list size="1">
@@ -2504,11 +2478,19 @@
       <option name="project" value="LOCAL" />
       <updated>1520112710815</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Functional music player buttons">
+      <created>1520259669391</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1520259669391</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2518,7 +2500,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.50647247" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2771855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328341" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.4935275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2566,11 +2548,12 @@
     <MESSAGE value="Added the icon for the app." />
     <MESSAGE value="Able to change wallpapers by clicking on the pictures." />
     <MESSAGE value="Working on music activity, added that music can be played from phone memory, next up is firebase storage." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on music activity, added that music can be played from phone memory, next up is firebase storage." />
+    <MESSAGE value="Functional music player buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functional music player buttons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2863,13 +2846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-26/android.jar!/android/os/Handler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_oaplikaciji.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -2914,23 +2890,44 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java">
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-26/android.jar!/android/os/Handler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="69" column="74" lean-forward="false" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
+        <state relative-caret-position="280">
+          <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="175" column="24" lean-forward="false" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4822#5301#0" expanded="true" />
+            <element signature="e#5300#5301#0" expanded="true" />
+            <element signature="e#5986#6549#0" expanded="true" />
+            <element signature="e#6548#6549#0" expanded="true" />
+            <element signature="e#6589#6804#0" expanded="true" />
+            <element signature="e#6803#6804#0" expanded="true" />
+            <element signature="e#6845#7395#0" expanded="true" />
+            <element signature="e#7394#7395#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
