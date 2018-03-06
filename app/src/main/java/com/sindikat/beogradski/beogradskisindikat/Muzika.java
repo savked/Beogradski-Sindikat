@@ -97,6 +97,22 @@ public class Muzika extends AppCompatActivity {
             }
         });
 
+        // When button is clicked, music starts playing and icon changes
+        playButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!mediaPlayer.isPlaying()){
+                    //Stopping
+                    mediaPlayer.start();
+                    playButton.setBackgroundResource(R.drawable.pause);
+                }
+                else{
+                    mediaPlayer.pause();
+                    playButton.setBackgroundResource(R.drawable.play);
+                }
+            }
+        });
+
         // Media Player
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         fetchAudioUrlFromFirebase();
@@ -105,6 +121,7 @@ public class Muzika extends AppCompatActivity {
         // Position Bar
         positionBar = (SeekBar) findViewById(R.id.positionBar);
         positionBar.setMax(totalTime);
+
         positionBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -116,7 +133,6 @@ public class Muzika extends AppCompatActivity {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
 
             @Override
@@ -140,33 +156,19 @@ public class Muzika extends AppCompatActivity {
             }
         }).start();
 
-        // When button is clicked, music starts playing and icon changes
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(!mediaPlayer.isPlaying()){
-                    //Stopping
-                    mediaPlayer.start();
-                    playButton.setBackgroundResource(R.drawable.pause);
-                }
-                else{
-                    mediaPlayer.pause();
-                    playButton.setBackgroundResource(R.drawable.play);
-                }
-            }
-        });
-
     }
     // Getting the song from Firebase Storage
     private void fetchAudioUrlFromFirebase() {
         final FirebaseStorage storage = FirebaseStorage.getInstance();
         // Create a storage reference from our app
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Muzika").child("Beogradski Sindikat - Dolazi Sindikat.mp3");
+        final StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Muzika").child("Beogradski Sindikat - Dolazi Sindikat.mp3");
+
+        mediaPlayer.getDuration();
 
         String songName = storageRef.getName();///////////////////////////// Getting song name from the Firebase Storage
         songNameTV.setText(songName.substring(0, songName.length() - 4)); // Removing '.mp3' from the name
 
-                storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 try {
@@ -175,7 +177,6 @@ public class Muzika extends AppCompatActivity {
                     mediaPlayer.setDataSource(url);
                     // Wait for media player to get prepare
                     mediaPlayer.prepareAsync();
-                    totalTime = mediaPlayer.getDuration();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -188,34 +189,34 @@ public class Muzika extends AppCompatActivity {
                         Log.i("TAG", e.getMessage());
                     }
                 });
-
     }
 
+
     private Handler handler = new Handler(){
-            @Override
-            public void handleMessage(Message msg) {
-                int currentPosition = msg.what;
-                // Update positionBar
-                positionBar.setProgress(currentPosition);
+        @Override
+        public void handleMessage(Message msg) {
+            int currentPosition = msg.what;
+            // Update positionBar
+            positionBar.setProgress(currentPosition);
 
-                // Update Labels
-                String elapsedTime = createTimeLabel(currentPosition);
-                elapsedTimeLabel.setText(elapsedTime);
+            // Update Labels
+            String elapsedTime = createTimeLabel(currentPosition);
+            elapsedTimeLabel.setText(elapsedTime);
 
-                String duration = createTimeLabel(mediaPlayer.getDuration());
-                remainingTimeLabel.setText(duration);
-            }
-        };
+            String duration = createTimeLabel(mediaPlayer.getDuration());
+            remainingTimeLabel.setText(duration);
+        }
+    };
 
-        public String createTimeLabel(int time){
-            String timeLabel = "";
-            int min = time / 1000 / 60;
-            int sec = time / 1000 % 60;
+    public String createTimeLabel(int time){
+        String timeLabel = "";
+        int min = time / 1000 / 60;
+        int sec = time / 1000 % 60;
 
-            timeLabel = min + ":";
-            if(sec < 10) timeLabel += "0";
-            timeLabel += sec;
+        timeLabel = min + ":";
+        if(sec < 10) timeLabel += "0";
+        timeLabel += sec;
 
-            return timeLabel;
+        return timeLabel;
     }
 }
