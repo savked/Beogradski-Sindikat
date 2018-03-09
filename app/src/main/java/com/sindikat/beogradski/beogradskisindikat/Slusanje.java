@@ -1,6 +1,7 @@
 package com.sindikat.beogradski.beogradskisindikat;
 
 import android.media.AudioManager;
+import android.media.Image;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.os.Handler;
@@ -12,6 +13,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -37,11 +39,13 @@ public class Slusanje extends AppCompatActivity {
     TextView elapsedTimeLabel;
     TextView remainingTimeLabel;
     TextView songNameTV;
+    ImageView songImage;
 
     MediaPlayer mediaPlayer = new MediaPlayer();
 
     int totalTime;
     String songName = "";
+    Integer songimage = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +60,7 @@ public class Slusanje extends AppCompatActivity {
         elapsedTimeLabel = (TextView) findViewById(R.id.timeStart);
         remainingTimeLabel = (TextView) findViewById(R.id.timeEnd);
         songNameTV = (TextView) findViewById(R.id.songName);
+        songImage = (ImageView) findViewById(R.id.songImage);
 
         // Getting the song name from Muzika class
         Bundle extras = getIntent().getExtras();
@@ -64,7 +69,10 @@ public class Slusanje extends AppCompatActivity {
             songName = null;
         } else {
             songName = extras.getString("songname");
+            songimage = extras.getInt("songimage");
+
             songNameTV.setText(songName);
+            songImage.setImageResource(songimage);
         }
 
         // Media Player

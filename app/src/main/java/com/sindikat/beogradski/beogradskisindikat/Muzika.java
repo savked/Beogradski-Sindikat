@@ -26,6 +26,7 @@ public class Muzika extends AppCompatActivity {
     private ExpandableListView listView;
     private ExpandableListAdapter listAdapter;
     private List<String> imenaAlbuma;
+    private List<Integer> slikaPesme;
     private HashMap<String, List<String>> listHash;
 
     @Override
@@ -44,6 +45,8 @@ public class Muzika extends AppCompatActivity {
                 Intent intent = new Intent(Muzika.this, Slusanje.class);
 
                 intent.putExtra("songname", listHash.get(imenaAlbuma.get(i)).get(i1));
+                intent.putExtra("songimage", slikaPesme.get(i));
+
                 startActivity(intent);
 
                 return false;
@@ -54,7 +57,15 @@ public class Muzika extends AppCompatActivity {
 
     private void initData(){
         imenaAlbuma = new ArrayList<>();
+        slikaPesme = new ArrayList<>();
         listHash = new HashMap<>();
+
+        // ArrayList za sliku koja se prikazuje tokom slusanja
+        slikaPesme.add(R.drawable.album1);
+        slikaPesme.add(R.drawable.album2);
+        slikaPesme.add(R.drawable.album3);
+        slikaPesme.add(R.drawable.album4);
+        slikaPesme.add(R.drawable.album5);
 
         imenaAlbuma.add("BSSST... Tišinčina");
         imenaAlbuma.add("Govedina");
@@ -91,7 +102,7 @@ public class Muzika extends AppCompatActivity {
 
         List<String> svizaj = new ArrayList<>();
         svizaj.add("Krećemo u napad");
-        svizaj.add("Ja u životu imama sve");
+        svizaj.add("Ja u životu imam sve");
         svizaj.add("Zajedno");
         svizaj.add("SBS");
         svizaj.add("Deo prošlosti");
@@ -110,8 +121,6 @@ public class Muzika extends AppCompatActivity {
         svizaj.add("Jebem li ti mater");
         svizaj.add("Živina");
         svizaj.add("Ale ale");
-        svizaj.add("Govor");
-        svizaj.add("Da se zna");
         svizaj.add("Samo jedan dan");
 
         List<String> oni = new ArrayList<>();
