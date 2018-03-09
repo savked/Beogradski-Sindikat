@@ -5,6 +5,7 @@ import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Message;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -54,30 +55,24 @@ public class Slusanje extends AppCompatActivity {
         remainingTimeLabel = (TextView) findViewById(R.id.timeEnd);
         songNameTV = (TextView) findViewById(R.id.songName);
 
+        // Getting the song name from Muzika class
+        String songName = "";
+        Bundle extras = getIntent().getExtras();
+
+        if(extras == null){
+            songName = null;
+        } else {
+            songName = extras.getString("songname");
+            songNameTV.setText(songName);
+        }
+
         // Media Player
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         fetchAudioUrlFromFirebase();
-        mediaPlayer.seekTo(0);
 
         // Position Bar
         positionBar = (SeekBar) findViewById(R.id.positionBar);
         positionBar.setMax(totalTime);
-
-        // When button is clicked, music starts playing and icon changes
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(!mediaPlayer.isPlaying()){
-
-                    mediaPlayer.start();
-                    playButton.setBackgroundResource(R.drawable.pause);
-                }
-                else{
-                    mediaPlayer.pause();
-                    playButton.setBackgroundResource(R.drawable.play);
-                }
-            }
-        });
 
         // Handling repeat
         repeatButton.setOnClickListener(new View.OnClickListener() {
@@ -159,18 +154,29 @@ public class Slusanje extends AppCompatActivity {
             }
         }).start();
 
+        // When button is clicked, music starts playing and icon changes
+        playButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!mediaPlayer.isPlaying()){
+
+                    mediaPlayer.start();
+                    mediaPlayer.getDuration();
+                    playButton.setBackgroundResource(R.drawable.pause);
+                }
+                else{
+                    mediaPlayer.pause();
+                    playButton.setBackgroundResource(R.drawable.play);
+                }
+            }
+        });
+
     }
     // Getting the song from Firebase Storage
     private void fetchAudioUrlFromFirebase() {
-
-        mediaPlayer.getDuration();
-
         final FirebaseStorage storage = FirebaseStorage.getInstance();
         // Create a storage reference from our app
-        final StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Slusanje").child("Beogradski Sindikat - Dolazi Sindikat.mp3");
-
-        String songName = storageRef.getName();///////////////////////////// Getting song name from the Firebase Storage
-        songNameTV.setText(songName.substring(0, songName.length() -    4)); // Removing '.mp3' from the name
+        final StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Muzika").child("Beogradski Sindikat - Dolazi Sindikat.mp3");
 
         storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
@@ -178,6 +184,7 @@ public class Slusanje extends AppCompatActivity {
                 try {
                     // Download url of file
                     final String url = uri.toString();
+                    mediaPlayer.reset();
                     mediaPlayer.setDataSource(url);
                     // Wait for media player to get prepare
                     mediaPlayer.prepareAsync();

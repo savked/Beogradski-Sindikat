@@ -69,6 +69,8 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
         String headerTitle = (String) getGroup(i);
 
+        viewGroup.setClickable(false);
+
         if(view == null){
             LayoutInflater inflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.custom_album, null);
@@ -78,15 +80,24 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
         ImageView slikaAlbuma = (ImageView) view.findViewById(R.id.SlikaAlbuma);
 
-        for(int pos = 0; pos < 6; pos++){
-            if(pos == 0) slikaAlbuma.setImageResource(R.drawable.album1);
+        if(i == 0){
+            slikaAlbuma.setImageResource(R.drawable.album1);
+            slikaAlbuma.setScaleType(ImageView.ScaleType.FIT_XY);
         }
+        if(i == 1) slikaAlbuma.setImageResource(R.drawable.album2);
+        if(i == 2){
+            slikaAlbuma.setImageResource(R.drawable.album3);
+            slikaAlbuma.setScaleType(ImageView.ScaleType.FIT_XY);
+        }
+        if(i == 3) slikaAlbuma.setImageResource(R.drawable.album4);
+        if(i == 4) slikaAlbuma.setImageResource(R.drawable.album5);
 
         return view;
     }
 
     @Override
     public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
+        viewGroup.setClickable(false);
         final String imePesme = (String) getChild(i, i1);
         if(view == null){
             LayoutInflater inflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
