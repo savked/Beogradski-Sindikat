@@ -68,7 +68,7 @@ public class Muzika extends AppCompatActivity {
         bssttis.add("Duga je ulica");
         bssttis.add("Divljina");
         bssttis.add("Slatke male maloletnice");
-        bssttis.add("Z.DZ.T.S. (Iz budzeta miks)");
+        bssttis.add("Z.DŽ.T.Š. (Iz budžeta miks)");
         bssttis.add("Samo jedan život");
         bssttis.add("Škabo maestro");
         bssttis.add("Znaj");

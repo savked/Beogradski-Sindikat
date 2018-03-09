@@ -22,6 +22,7 @@ import com.google.firebase.storage.StorageException;
 import com.google.firebase.storage.StorageReference;
 
 import android.net.Uri;
+import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -40,6 +41,7 @@ public class Slusanje extends AppCompatActivity {
     MediaPlayer mediaPlayer = new MediaPlayer();
 
     int totalTime;
+    String songName = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +58,6 @@ public class Slusanje extends AppCompatActivity {
         songNameTV = (TextView) findViewById(R.id.songName);
 
         // Getting the song name from Muzika class
-        String songName = "";
         Bundle extras = getIntent().getExtras();
 
         if(extras == null){
@@ -86,6 +87,7 @@ public class Slusanje extends AppCompatActivity {
                     repeatButton.setAlpha(1.0f);
 
                     repeatEnabled = true;
+                    Toast.makeText(Slusanje.this, "Ponavljanje uključeno", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     mediaPlayer.setLooping(false);
@@ -94,6 +96,7 @@ public class Slusanje extends AppCompatActivity {
                     repeatButton.setAlpha(0.5f);
 
                     repeatEnabled = false;
+                    Toast.makeText(Slusanje.this, "Ponavljanje isključeno", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -109,12 +112,14 @@ public class Slusanje extends AppCompatActivity {
                     shuffleButton.setAlpha(1.0f);
 
                     shuffleEnabled = true;
+                    Toast.makeText(Slusanje.this, "Shuffle uključen", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     shuffleButton.setBackgroundResource(R.drawable.shuffledisabled);
                     shuffleButton.setAlpha(0.5f);
 
                     shuffleEnabled = false;
+                    Toast.makeText(Slusanje.this, "Shuffle isključen", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -176,7 +181,7 @@ public class Slusanje extends AppCompatActivity {
     private void fetchAudioUrlFromFirebase() {
         final FirebaseStorage storage = FirebaseStorage.getInstance();
         // Create a storage reference from our app
-        final StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Muzika").child("Beogradski Sindikat - Dolazi Sindikat.mp3");
+        final StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Muzika").child(songName + ".mp3");
 
         storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
