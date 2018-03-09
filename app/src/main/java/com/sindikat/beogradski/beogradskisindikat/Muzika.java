@@ -1,22 +1,10 @@
 package com.sindikat.beogradski.beogradskisindikat;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.AttributeSet;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ExpandableListView;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -95,7 +83,7 @@ public class Muzika extends AppCompatActivity {
         List<String> gvd = new ArrayList<>();
         gvd.add("Govedina (Svi zajedno)");
         gvd.add("Goveđi mentalitet");
-        gvd.add("Goveda repuje");
+        gvd.add("Goveda repuju");
         gvd.add("Duga je muzika");
         gvd.add("Himna");
         gvd.add("Politička");

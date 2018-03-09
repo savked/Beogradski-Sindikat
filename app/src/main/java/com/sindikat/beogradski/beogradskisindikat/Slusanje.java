@@ -1,12 +1,9 @@
 package com.sindikat.beogradski.beogradskisindikat;
 
 import android.media.AudioManager;
-import android.media.Image;
-import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,7 +17,6 @@ import android.widget.TextView;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageException;
 import com.google.firebase.storage.StorageReference;
 
 import android.net.Uri;
@@ -75,9 +71,39 @@ public class Slusanje extends AppCompatActivity {
             songImage.setImageResource(songimage);
         }
 
-        // Media Player
+        // Getting the song from Firebase
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        // Create a storage reference from our app
+        StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Muzika").child(songName + ".mp3");
+
+        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                try {
+                    // Download url of file
+                    String url = uri.toString();
+                    // Setting the Data Source to URL
+                    mediaPlayer.setDataSource(url);
+                    // Wait for media player to get prepare
+                    mediaPlayer.prepareAsync();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.i("TAG", e.getMessage());
+                    }
+                });
+
+
+
+        // Media Player`
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-        fetchAudioUrlFromFirebase();
 
         // Position Bar
         positionBar = (SeekBar) findViewById(R.id.positionBar);
@@ -167,52 +193,33 @@ public class Slusanje extends AppCompatActivity {
             }
         }).start();
 
-        // When button is clicked, music starts playing and icon changes
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(!mediaPlayer.isPlaying()){
 
-                    mediaPlayer.start();
-                    mediaPlayer.getDuration();
-                    playButton.setBackgroundResource(R.drawable.pause);
-                }
-                else{
-                    mediaPlayer.pause();
-                    playButton.setBackgroundResource(R.drawable.play);
-                }
+        mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(final MediaPlayer mediaPlayer) {
+                totalTime = mediaPlayer.getDuration();
+                String duration = createTimeLabel(totalTime);
+                remainingTimeLabel.setText(duration);
+                Toast.makeText(Slusanje.this, "Pesma učitana", Toast.LENGTH_SHORT).show();
+
+                // When button is clicked, music starts playing and icon changes
+                playButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if(!mediaPlayer.isPlaying()){
+
+                            mediaPlayer.start();
+                            playButton.setBackgroundResource(R.drawable.pause);
+                        }
+                        else{
+                            mediaPlayer.pause();
+                            playButton.setBackgroundResource(R.drawable.play);
+                        }
+                    }
+                });
             }
         });
 
-    }
-    // Getting the song from Firebase Storage
-    private void fetchAudioUrlFromFirebase() {
-        final FirebaseStorage storage = FirebaseStorage.getInstance();
-        // Create a storage reference from our app
-        final StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Muzika").child(songName + ".mp3");
-
-        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-                try {
-                    // Download url of file
-                    final String url = uri.toString();
-                    mediaPlayer.reset();
-                    mediaPlayer.setDataSource(url);
-                    // Wait for media player to get prepare
-                    mediaPlayer.prepareAsync();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.i("TAG", e.getMessage());
-                    }
-                });
     }
 
 
@@ -226,9 +233,6 @@ public class Slusanje extends AppCompatActivity {
             // Update Labels
             String elapsedTime = createTimeLabel(currentPosition);
             elapsedTimeLabel.setText(elapsedTime);
-
-            String duration = createTimeLabel(mediaPlayer.getDuration());
-            remainingTimeLabel.setText(duration);
         }
     };
 

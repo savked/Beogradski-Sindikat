@@ -6,14 +6,14 @@
         <devices>
           <device id="Nexus 5" />
           <device id="pixel_2" />
+          <device id="Nexus 4" />
+          <device id="Galaxy Nexus" />
+          <device id="Nexus S" />
           <device id="Nexus One" />
           <device id="pixel_c" />
           <device id="pixel_xl" />
           <device id="wear_round" />
-          <device id="Nexus S" />
-          <device id="Galaxy Nexus" />
           <device id="pixel" />
-          <device id="pixel_2_xl" />
         </devices>
       </config>
     </shared>
@@ -24,8 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="99698c61-c597-49d9-a0a6-847f7ae34e3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ExpandableListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ExpandableListAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slusanje.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slusanje.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml" />
     </list>
     <ignored path="Beogradski Sindikat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,50 +72,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Muzika.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="47" column="60" lean-forward="false" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1376#1881#0" expanded="true" />
-                <element signature="e#1880#1881#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Slusanje.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slusanje.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="74" column="50" lean-forward="false" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_muzika.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpandableListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ExpandableListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="91" column="67" lean-forward="false" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
+            <state relative-caret-position="461">
+              <caret line="202" column="60" lean-forward="false" selection-start-line="202" selection-start-column="60" selection-end-line="202" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2686#3239#0" expanded="true" />
+                <element signature="e#3238#3239#0" expanded="true" />
+                <element signature="e#6810#7900#0" expanded="true" />
+                <element signature="e#7329#7874#0" expanded="true" />
+                <element signature="e#7873#7874#0" expanded="true" />
+                <element signature="e#7899#7900#0" expanded="true" />
+                <element signature="e#7942#8319#0" expanded="true" />
+                <element signature="e#8318#8319#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,7 +107,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>onPrepa</find>
-      <find>totalTime</find>
       <find>songname</find>
       <find>currentPos</find>
       <find>handleMes</find>
@@ -143,6 +115,9 @@
       <find>songNameT</find>
       <find>fetch</find>
       <find>setdATA</find>
+      <find>getDuration</find>
+      <find>totalTime</find>
+      <find>.start()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1934,10 +1909,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/HomeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_izbor_pesama.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_album.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_rowhome.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_pesme.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ExpandableListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slusanje.java" />
       </list>
@@ -2010,6 +1985,38 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beogradski-Sindikat" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beogradski-Sindikat" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beogradskisindikat" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2143,7 +2150,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520616600043" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520621942161" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2191,7 +2198,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520616600043" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520621942161" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2374,7 +2381,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520616600046" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520621942162" />
       </method>
     </configuration>
     <list size="1">
@@ -2525,7 +2532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520610365745</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added that song image changes, when album is choosen.">
+      <created>1520616602101</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1520616602101</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2608,7 +2622,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2955,44 +2969,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ExpandableListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="91" column="67" lean-forward="false" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="433">
+          <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ExpandableListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="47" column="60" lean-forward="false" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+        <state relative-caret-position="884">
+          <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1376#1881#0" expanded="true" />
-            <element signature="e#1880#1881#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slusanje.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="74" column="50" lean-forward="false" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="461">
+          <caret line="202" column="60" lean-forward="false" selection-start-line="202" selection-start-column="60" selection-end-line="202" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2686#3239#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+            <element signature="e#6810#7900#0" expanded="true" />
+            <element signature="e#7329#7874#0" expanded="true" />
+            <element signature="e#7873#7874#0" expanded="true" />
+            <element signature="e#7899#7900#0" expanded="true" />
+            <element signature="e#7942#8319#0" expanded="true" />
+            <element signature="e#8318#8319#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
