@@ -55,11 +55,11 @@ public class Muzika extends AppCompatActivity {
         slikaPesme.add(R.drawable.album4);
         slikaPesme.add(R.drawable.album5);
 
-        imenaAlbuma.add("BSSST... Tišinčina");
-        imenaAlbuma.add("Govedina");
-        imenaAlbuma.add("Svi zajedno");
-        imenaAlbuma.add("Oni su");
-        imenaAlbuma.add("Diskretni heroji");
+        imenaAlbuma.add("BSSST... Tišinčina - (2001)");
+        imenaAlbuma.add("Govedina - (2002)");
+        imenaAlbuma.add("Svi zajedno - (2005)");
+        imenaAlbuma.add("Oni su - (2006)");
+        imenaAlbuma.add("Diskretni heroji - (2010)");
 
         List<String> bssttis = new ArrayList<>();
         bssttis.add("Buđenje");

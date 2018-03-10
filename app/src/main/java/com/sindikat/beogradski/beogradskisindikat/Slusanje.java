@@ -37,6 +37,8 @@ public class Slusanje extends AppCompatActivity {
     TextView songNameTV;
     ImageView songImage;
 
+    private Handler handler = new Handler();
+
     MediaPlayer mediaPlayer = new MediaPlayer();
 
     int totalTime;
@@ -57,6 +59,7 @@ public class Slusanje extends AppCompatActivity {
         remainingTimeLabel = (TextView) findViewById(R.id.timeEnd);
         songNameTV = (TextView) findViewById(R.id.songName);
         songImage = (ImageView) findViewById(R.id.songImage);
+        positionBar = (SeekBar) findViewById(R.id.positionBar);
 
         // Getting the song name from Muzika class
         Bundle extras = getIntent().getExtras();
@@ -104,10 +107,6 @@ public class Slusanje extends AppCompatActivity {
 
         // Media Player`
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
-        // Position Bar
-        positionBar = (SeekBar) findViewById(R.id.positionBar);
-        positionBar.setMax(totalTime);
 
         // Handling repeat
         repeatButton.setOnClickListener(new View.OnClickListener() {
@@ -158,48 +157,16 @@ public class Slusanje extends AppCompatActivity {
             }
         });
 
-        // Seekbar seeks to time the user has clicked on
-        positionBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                if(b){
-                    mediaPlayer.seekTo(i);
-                    positionBar.setProgress(i);
-                }
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        // Thread (Update positionBar & timeLabel)
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while(mediaPlayer != null){
-                    try{
-                        Message msg = new Message();
-                        msg.what = mediaPlayer.getCurrentPosition();
-                        handler.sendMessage(msg);
-                        Thread.sleep(1000);
-                    }catch (InterruptedException e){}
-                }
-            }
-        }).start();
-
-
+        // When Media Player is prepared
         mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(final MediaPlayer mediaPlayer) {
                 totalTime = mediaPlayer.getDuration();
-                String duration = createTimeLabel(totalTime);
+                positionBar.setMax(totalTime / 1000);
+
+                String duration = createTimeLabel(totalTime / 1000);
                 remainingTimeLabel.setText(duration);
+
                 Toast.makeText(Slusanje.this, "Pesma učitana", Toast.LENGTH_SHORT).show();
 
                 // When button is clicked, music starts playing and icon changes
@@ -207,7 +174,6 @@ public class Slusanje extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(!mediaPlayer.isPlaying()){
-
                             mediaPlayer.start();
                             playButton.setBackgroundResource(R.drawable.pause);
                         }
@@ -220,26 +186,44 @@ public class Slusanje extends AppCompatActivity {
             }
         });
 
+        Slusanje.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if(mediaPlayer != null){
+                    int currentPosition = mediaPlayer.getCurrentPosition() / 1000;
+                    positionBar.setProgress(currentPosition);
+                    // Update Labels
+                    String elapsedTime = createTimeLabel(currentPosition);
+                    elapsedTimeLabel.setText(elapsedTime);
+                }
+                handler.postDelayed(this, 1000);
+            }
+        });
+
+        positionBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                if(mediaPlayer != null && b){
+                    mediaPlayer.seekTo(i * 1000);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
-
-
-    private Handler handler = new Handler(){
-        @Override
-        public void handleMessage(Message msg) {
-            int currentPosition = msg.what;
-            // Update positionBar
-            positionBar.setProgress(currentPosition);
-
-            // Update Labels
-            String elapsedTime = createTimeLabel(currentPosition);
-            elapsedTimeLabel.setText(elapsedTime);
-        }
-    };
 
     public String createTimeLabel(int time){
         String timeLabel = "";
-        int min = time / 1000 / 60;
-        int sec = time / 1000 % 60;
+        int min = time / 60;
+        int sec = time % 60;
 
         timeLabel = min + ":";
         if(sec < 10) timeLabel += "0";
