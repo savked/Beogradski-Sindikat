@@ -42,7 +42,11 @@ public class Slusanje extends AppCompatActivity {
     MediaPlayer mediaPlayer = new MediaPlayer();
 
     int totalTime;
+
     String songName = "";
+    String nextSongName = "";
+    String previousSongName = "";
+
     Integer songimage = 0;
 
     @Override
@@ -102,6 +106,13 @@ public class Slusanje extends AppCompatActivity {
                         Log.i("TAG", e.getMessage());
                     }
                 });
+
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 
 
@@ -168,6 +179,8 @@ public class Slusanje extends AppCompatActivity {
                 remainingTimeLabel.setText(duration);
 
                 Toast.makeText(Slusanje.this, "Pesma učitana", Toast.LENGTH_SHORT).show();
+                mediaPlayer.start();
+                playButton.setBackgroundResource(R.drawable.pause);
 
                 // When button is clicked, music starts playing and icon changes
                 playButton.setOnClickListener(new View.OnClickListener() {

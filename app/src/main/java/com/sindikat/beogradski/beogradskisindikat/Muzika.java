@@ -33,6 +33,10 @@ public class Muzika extends AppCompatActivity {
                 Intent intent = new Intent(Muzika.this, Slusanje.class);
 
                 intent.putExtra("songname", listHash.get(imenaAlbuma.get(i)).get(i1));
+
+                intent.putExtra("nextsong", listHash.get(imenaAlbuma.get(i)).get(i1+1));
+                intent.putExtra("previoussong", listHash.get(imenaAlbuma.get(i)).get(i1-1));
+
                 intent.putExtra("songimage", slikaPesme.get(i));
 
                 startActivity(intent);
@@ -54,12 +58,14 @@ public class Muzika extends AppCompatActivity {
         slikaPesme.add(R.drawable.album3);
         slikaPesme.add(R.drawable.album4);
         slikaPesme.add(R.drawable.album5);
+        slikaPesme.add(R.drawable.album6);
 
         imenaAlbuma.add("BSSST... Tišinčina - (2001)");
         imenaAlbuma.add("Govedina - (2002)");
         imenaAlbuma.add("Svi zajedno - (2005)");
         imenaAlbuma.add("Oni su - (2006)");
         imenaAlbuma.add("Diskretni heroji - (2010)");
+        imenaAlbuma.add("Singl pesme - (2015+)");
 
         List<String> bssttis = new ArrayList<>();
         bssttis.add("Buđenje");
@@ -116,7 +122,7 @@ public class Muzika extends AppCompatActivity {
         oni.add("Pretorijanska garda");
         oni.add("Već viđeno");
         oni.add("Metalna prašina");
-        oni.add("Mi smo ta ekipa");
+
 
         List<String> diskretni = new ArrayList<>();
         diskretni.add("Početak");
@@ -137,10 +143,17 @@ public class Muzika extends AppCompatActivity {
         diskretni.add("Balada disidenta");
         diskretni.add("Još ovu noć");
 
+        List<String> singlovi = new ArrayList<>();
+        singlovi.add("BS Armija");
+        singlovi.add("Sistem te laže");
+        singlovi.add("Kasno je");
+        singlovi.add("Sindikalna priča");
+
         listHash.put(imenaAlbuma.get(0), bssttis);
         listHash.put(imenaAlbuma.get(1), gvd);
         listHash.put(imenaAlbuma.get(2), svizaj);
         listHash.put(imenaAlbuma.get(3), oni);
         listHash.put(imenaAlbuma.get(4), diskretni);
+        listHash.put(imenaAlbuma.get(5), singlovi);
     }
 }

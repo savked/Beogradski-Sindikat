@@ -90,6 +90,10 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         }
         if(i == 3) slikaAlbuma.setImageResource(R.drawable.album4);
         if(i == 4) slikaAlbuma.setImageResource(R.drawable.album5);
+        if(i == 5){
+            slikaAlbuma.setImageResource(R.drawable.album6);
+            slikaAlbuma.setScaleType(ImageView.ScaleType.FIT_XY);
+        }
 
         return view;
     }
