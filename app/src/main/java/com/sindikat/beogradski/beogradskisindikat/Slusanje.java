@@ -93,6 +93,7 @@ public class Slusanje extends AppCompatActivity {
                     mediaPlayer.setDataSource(url);
                     // Wait for media player to get prepare
                     mediaPlayer.prepareAsync();
+                    Toast.makeText(Slusanje.this, "Učitavanje", Toast.LENGTH_SHORT).show();
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -178,7 +179,6 @@ public class Slusanje extends AppCompatActivity {
                 String duration = createTimeLabel(totalTime / 1000);
                 remainingTimeLabel.setText(duration);
 
-                Toast.makeText(Slusanje.this, "Pesma učitana", Toast.LENGTH_SHORT).show();
                 mediaPlayer.start();
                 playButton.setBackgroundResource(R.drawable.pause);
 

@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbarbot" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/bsShtit4"
         android:layout_width="100dp"
         android:layout_height="90dp"
         android:layout_marginLeft="8dp"

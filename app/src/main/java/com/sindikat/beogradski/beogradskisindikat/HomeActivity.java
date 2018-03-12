@@ -15,6 +15,8 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+
+
         String[] stavke = {"Članovi","Muzika","Slike","Nastupi","O aplikaciji"
         };
         ListAdapter adapter = new CustomAdapter2(this, stavke);

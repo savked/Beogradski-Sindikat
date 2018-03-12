@@ -30,7 +30,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/bsShtit2"
         android:layout_width="100dp"
         android:layout_height="90dp"
         app:srcCompat="@drawable/bs_shtit"

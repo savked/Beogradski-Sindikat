@@ -1,7 +1,10 @@
 package com.sindikat.beogradski.beogradskisindikat;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -11,6 +14,16 @@ public class ClanoviActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clanovi);
+
+        ImageView bsShtit2 = (ImageView) findViewById(R.id.bsShtit2);
+
+        bsShtit2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClanoviActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
         String[] clanovi = {"Feđa Dimović","Ognjen Janković", "Boško Ćirković", "Aleksandar Karađinović",
                 "Marko Đurić", "Darko Marjanović","Đorđe Jovanović"

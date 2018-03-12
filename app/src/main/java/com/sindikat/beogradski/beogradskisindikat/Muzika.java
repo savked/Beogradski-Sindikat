@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -17,10 +19,22 @@ public class Muzika extends AppCompatActivity {
     private List<Integer> slikaPesme;
     private HashMap<String, List<String>> listHash;
 
+    private ImageView bsShtit;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_izbor_pesama);
+
+        bsShtit = (ImageView) findViewById(R.id.bsShtit3);
+        bsShtit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Muzika.this, HomeActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         listView = (ExpandableListView) findViewById(R.id.listViewExp);
         initData();
@@ -33,9 +47,6 @@ public class Muzika extends AppCompatActivity {
                 Intent intent = new Intent(Muzika.this, Slusanje.class);
 
                 intent.putExtra("songname", listHash.get(imenaAlbuma.get(i)).get(i1));
-
-                intent.putExtra("nextsong", listHash.get(imenaAlbuma.get(i)).get(i1+1));
-                intent.putExtra("previoussong", listHash.get(imenaAlbuma.get(i)).get(i1-1));
 
                 intent.putExtra("songimage", slikaPesme.get(i));
 
