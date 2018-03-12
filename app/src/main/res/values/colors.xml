@@ -3,4 +3,5 @@
     <color name="colorPrimaryDark">#231f20</color>
     <color name="colorAccent">#FF4081</color>
     <color name="bsNarandzasta">#FDB813</color>
+    <color name="text_shadow">#7F000000</color>
 </resources>

@@ -21,6 +21,8 @@ public class Muzika extends AppCompatActivity {
 
     private ImageView bsShtit;
 
+    private int lastExpandedPosition = -1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +55,16 @@ public class Muzika extends AppCompatActivity {
                 startActivity(intent);
 
                 return false;
+            }
+        });
+
+        listView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int i) {
+                if(lastExpandedPosition != -1 && i != lastExpandedPosition){
+                    listView.collapseGroup(lastExpandedPosition);
+                }
+                lastExpandedPosition = i;
             }
         });
 

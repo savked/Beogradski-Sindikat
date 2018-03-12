@@ -19,5 +19,9 @@
         android:layout_marginTop="50dp"
         android:text="Text View"
         android:textColor="@color/bsNarandzasta"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
 </LinearLayout>
