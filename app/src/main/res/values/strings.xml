@@ -4,5 +4,84 @@
         <item>"Fedja Dimović"</item>
         <item>"Ognjen Janković</item>
     </string-array>
+    <string-array name="link">
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Buđenje.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Dolazi Sindikat.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Duga je ulica.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Divljina.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Slatke male maloletnice.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Z.DŽ.T.Š. (Iz budžeta miks.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Samo jedan život"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Škabo maestro.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Znaj.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Na bojnom polju (Viteška 2).mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Zalazak trećeg sunca.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Gorila u magli.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/BS!BS.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Plejersko ponašanje.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Misli o moći.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Nek nas ne zaborave.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Ko iz automata.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Govedina (Svi zajedno).mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Goveđi mentalitet.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Goveda repuju.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Duga je muzika.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Himna.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Politička.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Krećemo u napad.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Ja u životu imam sve.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Zajedno.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/SBS.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Deo prošlosti.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Ljiga.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Poroci Beograda.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Život je prevara.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Stotka.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Alal vera.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Samo za BGD.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Niko ne može da zna.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Od sranja se ne beži.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Jednostavnost i suština.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Pravo kroz vetar.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Povratak.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Mi smo ta ekipa.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Jebem li ti mater.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Živina.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Ale ale.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Samo jedan dan.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Oni su.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Pretorijanska garda.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Već viđeno.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Metalna prašina.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Početak.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Za sve moje ljude.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Svim srcem.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Čovek.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Gala-socijala.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Glavom u zid.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Zajebi.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Tu sam ja.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Pazi, pazi.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Iskustvo.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Osveta.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Svedok (saradnik).mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Welcome to Srbija.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Olovni vojnici.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Nema povlačenja, nema predaje.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Balada disidenta.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Još ovu noć.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/BS Armija.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Sistem te laže.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Kasno je.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Sindikalna priča.mp3"</item>
+    </string-array>
+    <string-array name="albumiSlike" >
+        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album1.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album2.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album3.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album4.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album5.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album6.png"</item>
+    </string-array>
     <string name="title_activity_oaplikaciji">OAplikaciji</string>
 </resources>

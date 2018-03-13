@@ -1,5 +1,7 @@
 package com.sindikat.beogradski.beogradskisindikat;
 
+import android.content.Intent;
+import android.content.res.Resources;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Handler;
@@ -29,7 +31,7 @@ public class Slusanje extends AppCompatActivity {
     Button playButton;
     Button repeatButton;
     Button shuffleButton;
-    Button backButton;
+    Button previousButton;
     Button nextButton;
     SeekBar positionBar;
     TextView elapsedTimeLabel;
@@ -41,11 +43,18 @@ public class Slusanje extends AppCompatActivity {
 
     MediaPlayer mediaPlayer = new MediaPlayer();
 
+    StorageReference storageRef;
+    FirebaseStorage storage;
+
     int totalTime;
 
     String songName = "";
     String nextSongName = "";
     String previousSongName = "";
+
+    public String link[];
+
+    int position;
 
     Integer songimage = 0;
 
@@ -54,10 +63,12 @@ public class Slusanje extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_muzika);
 
+         link = getResources().getStringArray(R.array.link);
+
         playButton = (Button) findViewById(R.id.playButton);
         repeatButton = (Button) findViewById(R.id.repeatButton);
         shuffleButton = (Button) findViewById(R.id.shuffleButton);
-        backButton = (Button) findViewById(R.id.backButton);
+        previousButton = (Button) findViewById(R.id.backButton);
         nextButton = (Button) findViewById(R.id.nextButton);
         elapsedTimeLabel = (TextView) findViewById(R.id.timeStart);
         remainingTimeLabel = (TextView) findViewById(R.id.timeEnd);
@@ -66,52 +77,57 @@ public class Slusanje extends AppCompatActivity {
         positionBar = (SeekBar) findViewById(R.id.positionBar);
 
         // Getting the song name from Muzika class
-        Bundle extras = getIntent().getExtras();
+        final Bundle extras = getIntent().getExtras();
 
         if(extras == null){
             songName = null;
         } else {
             songName = extras.getString("songname");
             songimage = extras.getInt("songimage");
+            songImage.setImageResource(songimage);
+
+            position = extras.getInt("position");
 
             songNameTV.setText(songName);
-            songImage.setImageResource(songimage);
         }
 
-        // Getting the song from Firebase
-        FirebaseStorage storage = FirebaseStorage.getInstance();
-        // Create a storage reference from our app
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://beogradski-sindikat.appspot.com/Muzika").child(songName + ".mp3");
-
-        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-                try {
-                    // Download url of file
-                    String url = uri.toString();
-                    // Setting the Data Source to URL
-                    mediaPlayer.setDataSource(url);
-                    // Wait for media player to get prepare
-                    mediaPlayer.prepareAsync();
-                    Toast.makeText(Slusanje.this, "Učitavanje", Toast.LENGTH_SHORT).show();
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.i("TAG", e.getMessage());
-                    }
-                });
+        fetchfromFirebase();
 
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mediaPlayer.stop();
+                mediaPlayer.reset();
 
+                playButton.setBackgroundResource(R.drawable.play);
+
+                position += 1;
+
+                nextSongName = link[position].substring(44, link[position].length() - 4);
+
+                songNameTV.setText(nextSongName);
+                getAlbumSliku();
+
+                fetchfromFirebase();
+            }
+        });
+
+        previousButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mediaPlayer.stop();
+                mediaPlayer.reset();
+
+                playButton.setBackgroundResource(R.drawable.play);
+
+                position -= 1;
+
+                nextSongName = link[position].substring(44, link[position].length() - 4);
+
+                songNameTV.setText(nextSongName);
+                getAlbumSliku();
+
+                fetchfromFirebase();
             }
         });
 
@@ -243,5 +259,46 @@ public class Slusanje extends AppCompatActivity {
         timeLabel += sec;
 
         return timeLabel;
+    }
+
+    public void fetchfromFirebase(){
+        // Getting the song from Firebase
+        storage = FirebaseStorage.getInstance();
+        // Create a storage reference from our app
+        storageRef = storage.getReferenceFromUrl(link[position]);
+
+        storageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                try {
+                    // Download url of file
+                    String url = uri.toString();
+                    // Setting the Data Source to URL
+                    mediaPlayer.setDataSource(url);
+                    // Wait for media player to get prepare
+                    mediaPlayer.prepareAsync();
+                    Toast.makeText(Slusanje.this, "Učitavanje", Toast.LENGTH_SHORT).show();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.i("TAG", e.getMessage());
+                    }
+                });
+    }
+
+    public void getAlbumSliku(){
+        if(position >= 0 && position <= 16) songImage.setImageResource(R.drawable.album1);
+        else if(position >= 17 && position <= 22) songImage.setImageResource(R.drawable.album2);
+        else if(position >= 23 && position <= 43) songImage.setImageResource(R.drawable.album3);
+        else if(position >= 44 && position <= 47) songImage.setImageResource(R.drawable.album4);
+        else if(position >= 48 && position <= 64) songImage.setImageResource(R.drawable.album5);
+        else if(position >= 65 && position <= 68) songImage.setImageResource(R.drawable.album6);
     }
 }

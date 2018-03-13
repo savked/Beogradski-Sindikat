@@ -19,6 +19,8 @@ public class Muzika extends AppCompatActivity {
     private List<Integer> slikaPesme;
     private HashMap<String, List<String>> listHash;
 
+    private HashMap<String, List<Integer>> positionHash;
+
     private ImageView bsShtit;
 
     private int lastExpandedPosition = -1;
@@ -50,6 +52,8 @@ public class Muzika extends AppCompatActivity {
 
                 intent.putExtra("songname", listHash.get(imenaAlbuma.get(i)).get(i1));
 
+                intent.putExtra("position", positionHash.get(imenaAlbuma.get(i)).get(i1));
+
                 intent.putExtra("songimage", slikaPesme.get(i));
 
                 startActivity(intent);
@@ -57,6 +61,7 @@ public class Muzika extends AppCompatActivity {
                 return false;
             }
         });
+
 
         listView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
             @Override
@@ -75,6 +80,8 @@ public class Muzika extends AppCompatActivity {
         slikaPesme = new ArrayList<>();
         listHash = new HashMap<>();
 
+        positionHash = new HashMap<>();
+
         // ArrayList za sliku koja se prikazuje tokom slusanja
         slikaPesme.add(R.drawable.album1);
         slikaPesme.add(R.drawable.album2);
@@ -89,6 +96,9 @@ public class Muzika extends AppCompatActivity {
         imenaAlbuma.add("Oni su - (2006)");
         imenaAlbuma.add("Diskretni heroji - (2010)");
         imenaAlbuma.add("Singl pesme - (2015+)");
+
+        List<Integer> positions1 = new ArrayList<>();
+        for(int i = 0; i <= 16; i++) positions1.add(i);
 
         List<String> bssttis = new ArrayList<>();
         bssttis.add("Buđenje");
@@ -109,6 +119,9 @@ public class Muzika extends AppCompatActivity {
         bssttis.add("Nek nas ne zaborave");
         bssttis.add("Ko iz automata");
 
+        List<Integer> positions2 = new ArrayList<>();
+        for(int i = 17; i <= 22; i++) positions2.add(i);
+
         List<String> gvd = new ArrayList<>();
         gvd.add("Govedina (Svi zajedno)");
         gvd.add("Goveđi mentalitet");
@@ -116,6 +129,9 @@ public class Muzika extends AppCompatActivity {
         gvd.add("Duga je muzika");
         gvd.add("Himna");
         gvd.add("Politička");
+
+        List<Integer> positions3 = new ArrayList<>();
+        for(int i = 23; i <= 43; i++) positions3.add(i);
 
         List<String> svizaj = new ArrayList<>();
         svizaj.add("Krećemo u napad");
@@ -140,12 +156,17 @@ public class Muzika extends AppCompatActivity {
         svizaj.add("Ale ale");
         svizaj.add("Samo jedan dan");
 
+        List<Integer> positions4 = new ArrayList<>();
+        for(int i = 44; i <= 47; i++) positions4.add(i);
+
         List<String> oni = new ArrayList<>();
         oni.add("Oni su");
         oni.add("Pretorijanska garda");
         oni.add("Već viđeno");
         oni.add("Metalna prašina");
 
+        List<Integer> positions5 = new ArrayList<>();
+        for(int i = 48; i <= 64; i++) positions5.add(i);
 
         List<String> diskretni = new ArrayList<>();
         diskretni.add("Početak");
@@ -166,6 +187,9 @@ public class Muzika extends AppCompatActivity {
         diskretni.add("Balada disidenta");
         diskretni.add("Još ovu noć");
 
+        List<Integer> positions6 = new ArrayList<>();
+        for(int i = 65; i <= 68; i++) positions6.add(i);
+
         List<String> singlovi = new ArrayList<>();
         singlovi.add("BS Armija");
         singlovi.add("Sistem te laže");
@@ -178,5 +202,12 @@ public class Muzika extends AppCompatActivity {
         listHash.put(imenaAlbuma.get(3), oni);
         listHash.put(imenaAlbuma.get(4), diskretni);
         listHash.put(imenaAlbuma.get(5), singlovi);
+
+        positionHash.put(imenaAlbuma.get(0), positions1);
+        positionHash.put(imenaAlbuma.get(1), positions2);
+        positionHash.put(imenaAlbuma.get(2), positions3);
+        positionHash.put(imenaAlbuma.get(3), positions4);
+        positionHash.put(imenaAlbuma.get(4), positions5);
+        positionHash.put(imenaAlbuma.get(5), positions6);
     }
 }
