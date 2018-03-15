@@ -56,6 +56,8 @@ public class Muzika extends AppCompatActivity {
 
                 intent.putExtra("songimage", slikaPesme.get(i));
 
+                overridePendingTransition(0, 0);
+
                 startActivity(intent);
 
                 return false;

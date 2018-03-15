@@ -52,6 +52,9 @@ public class Slusanje extends AppCompatActivity {
     String nextSongName = "";
     String previousSongName = "";
 
+    private Boolean shuffleEnabled = false;
+    private Boolean repeatEnabled = false;
+
     public String link[];
 
     int position;
@@ -93,6 +96,8 @@ public class Slusanje extends AppCompatActivity {
 
         fetchfromFirebase();
 
+
+        // Next button clicked
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -112,6 +117,7 @@ public class Slusanje extends AppCompatActivity {
             }
         });
 
+        // Previous button clicked
         previousButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -131,6 +137,25 @@ public class Slusanje extends AppCompatActivity {
             }
         });
 
+        /*if(!repeatEnabled) {
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+                    mediaPlayer.reset();
+
+                    position += 1;
+
+                    nextSongName = link[position].substring(44, link[position].length() - 4);
+
+                    songNameTV.setText(nextSongName);
+                    getAlbumSliku();
+
+                    mediaPlayer.setOnCompletionListener(this);
+                    fetchfromFirebase();
+                }
+            });
+        }*/
+
 
 
         // Media Player`
@@ -138,7 +163,6 @@ public class Slusanje extends AppCompatActivity {
 
         // Handling repeat
         repeatButton.setOnClickListener(new View.OnClickListener() {
-            Boolean repeatEnabled = false;
             @Override
             public void onClick(View view) {
                 if(!repeatEnabled) {
@@ -148,6 +172,7 @@ public class Slusanje extends AppCompatActivity {
                     repeatButton.setAlpha(1.0f);
 
                     repeatEnabled = true;
+                    shuffleEnabled = false;
                     Toast.makeText(Slusanje.this, "Ponavljanje uključeno", Toast.LENGTH_SHORT).show();
                 }
                 else{
@@ -162,18 +187,33 @@ public class Slusanje extends AppCompatActivity {
             }
         });
 
-        // Handling shuffle
+        // Shuffle button function
         shuffleButton.setOnClickListener(new View.OnClickListener() {
-            Boolean shuffleEnabled = false;
             @Override
             public void onClick(View view) {
                 if(!shuffleEnabled) {
-                    // HANDLE SHUFFLING SONGS
                     shuffleButton.setBackgroundResource(R.drawable.shuffle);
                     shuffleButton.setAlpha(1.0f);
 
                     shuffleEnabled = true;
+                    repeatEnabled = false;
                     Toast.makeText(Slusanje.this, "Shuffle uključen", Toast.LENGTH_SHORT).show();
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mediaPlayer) {
+                            mediaPlayer.reset();
+
+                            position = (int)(Math.random() * 68);
+
+                            nextSongName = link[position].substring(44, link[position].length() - 4);
+
+                            songNameTV.setText(nextSongName);
+                            getAlbumSliku();
+
+                            mediaPlayer.setOnCompletionListener(this);
+                            fetchfromFirebase();
+                        }
+                    });
                 }
                 else{
                     shuffleButton.setBackgroundResource(R.drawable.shuffledisabled);
