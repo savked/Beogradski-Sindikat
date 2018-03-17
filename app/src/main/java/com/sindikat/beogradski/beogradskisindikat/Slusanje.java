@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
@@ -79,8 +80,11 @@ public class Slusanje extends AppCompatActivity {
         songImage = (ImageView) findViewById(R.id.songImage);
         positionBar = (SeekBar) findViewById(R.id.positionBar);
 
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        storage = FirebaseStorage.getInstance();
+
         // Getting the song name from Muzika class
-        final Bundle extras = getIntent().getExtras();
+        Bundle extras = getIntent().getExtras();
 
         if(extras == null){
             songName = null;
@@ -137,27 +141,6 @@ public class Slusanje extends AppCompatActivity {
             }
         });
 
-        /*if(!repeatEnabled) {
-            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mediaPlayer) {
-                    mediaPlayer.reset();
-
-                    position += 1;
-
-                    nextSongName = link[position].substring(44, link[position].length() - 4);
-
-                    songNameTV.setText(nextSongName);
-                    getAlbumSliku();
-
-                    mediaPlayer.setOnCompletionListener(this);
-                    fetchfromFirebase();
-                }
-            });
-        }*/
-
-
-
         // Media Player`
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 
@@ -198,22 +181,6 @@ public class Slusanje extends AppCompatActivity {
                     shuffleEnabled = true;
                     repeatEnabled = false;
                     Toast.makeText(Slusanje.this, "Shuffle uključen", Toast.LENGTH_SHORT).show();
-                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        @Override
-                        public void onCompletion(MediaPlayer mediaPlayer) {
-                            mediaPlayer.reset();
-
-                            position = (int)(Math.random() * 68);
-
-                            nextSongName = link[position].substring(44, link[position].length() - 4);
-
-                            songNameTV.setText(nextSongName);
-                            getAlbumSliku();
-
-                            mediaPlayer.setOnCompletionListener(this);
-                            fetchfromFirebase();
-                        }
-                    });
                 }
                 else{
                     shuffleButton.setBackgroundResource(R.drawable.shuffledisabled);
@@ -229,6 +196,7 @@ public class Slusanje extends AppCompatActivity {
         mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(final MediaPlayer mediaPlayer) {
+                mediaPlayer.setOnPreparedListener(this);
                 totalTime = mediaPlayer.getDuration();
                 positionBar.setMax(totalTime / 1000);
 
@@ -252,9 +220,47 @@ public class Slusanje extends AppCompatActivity {
                         }
                     }
                 });
+
+                // Handling next songs
+                if(shuffleEnabled){
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mediaPlayer) {
+                            mediaPlayer.reset();
+
+                            position = (int)(Math.random() * 68);
+                            System.out.println(position);
+
+                            nextSongName = link[position].substring(44, link[position].length() - 4);
+
+                            songNameTV.setText(nextSongName);
+                            getAlbumSliku();
+
+                            fetchfromFirebase();
+                        }
+                    });
+                } else {
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mediaPlayer) {
+                            mediaPlayer.stop();
+                            mediaPlayer.reset();
+
+                            position += 1;
+
+                            nextSongName = link[position].substring(44, link[position].length() - 4);
+
+                            songNameTV.setText(nextSongName);
+                            getAlbumSliku();
+
+                            fetchfromFirebase();
+                        }
+                    });
+                }
             }
         });
 
+        // Updating positionBar (SeekBar)
         Slusanje.this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -269,6 +275,7 @@ public class Slusanje extends AppCompatActivity {
             }
         });
 
+        // If clicked, going to the time clicked
         positionBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -302,8 +309,6 @@ public class Slusanje extends AppCompatActivity {
     }
 
     public void fetchfromFirebase(){
-        // Getting the song from Firebase
-        storage = FirebaseStorage.getInstance();
         // Create a storage reference from our app
         storageRef = storage.getReferenceFromUrl(link[position]);
 

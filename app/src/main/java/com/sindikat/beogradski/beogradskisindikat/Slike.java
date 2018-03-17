@@ -37,7 +37,20 @@ public class Slike extends AppCompatActivity {
                                     View v, int position, long id) {
                 WallpaperManager myWallpaperManager
                         = WallpaperManager.getInstance(getApplicationContext());
+                try {
+                    if(position == 0)
+                        myWallpaperManager.setResource(R.drawable.slika1);
+                    else if(position == 1)
+                        myWallpaperManager.setResource(R.drawable.slika2);
+                    else if(position == 2)
+                        myWallpaperManager.setResource(R.drawable.slika3);
+                    else if(position == 3)
+                        myWallpaperManager.setResource(R.drawable.slika4);
+
                     Toast.makeText(Slike.this, "Pozadina postavljena", Toast.LENGTH_SHORT).show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
