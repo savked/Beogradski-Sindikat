@@ -67,7 +67,7 @@ public class Slusanje extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_muzika);
 
-         link = getResources().getStringArray(R.array.link);
+        link = getResources().getStringArray(R.array.link);
 
         playButton = (Button) findViewById(R.id.playButton);
         repeatButton = (Button) findViewById(R.id.repeatButton);
@@ -110,7 +110,9 @@ public class Slusanje extends AppCompatActivity {
 
                 playButton.setBackgroundResource(R.drawable.play);
 
-                position += 1;
+                if(shuffleEnabled)
+                    position = (int) (Math.random() * 68);
+                else position += 1;
 
                 nextSongName = link[position].substring(44, link[position].length() - 4);
 
@@ -220,45 +222,29 @@ public class Slusanje extends AppCompatActivity {
                         }
                     }
                 });
-
-                // Handling next songs
-                if(shuffleEnabled){
-                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        @Override
-                        public void onCompletion(MediaPlayer mediaPlayer) {
-                            mediaPlayer.reset();
-
-                            position = (int)(Math.random() * 68);
-                            System.out.println(position);
-
-                            nextSongName = link[position].substring(44, link[position].length() - 4);
-
-                            songNameTV.setText(nextSongName);
-                            getAlbumSliku();
-
-                            fetchfromFirebase();
-                        }
-                    });
-                } else {
-                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        @Override
-                        public void onCompletion(MediaPlayer mediaPlayer) {
-                            mediaPlayer.stop();
-                            mediaPlayer.reset();
-
-                            position += 1;
-
-                            nextSongName = link[position].substring(44, link[position].length() - 4);
-
-                            songNameTV.setText(nextSongName);
-                            getAlbumSliku();
-
-                            fetchfromFirebase();
-                        }
-                    });
-                }
             }
         });
+
+        if(shuffleEnabled) {
+            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+                    mediaPlayer.stop();
+                    mediaPlayer.release();
+
+                    playButton.setBackgroundResource(R.drawable.play);
+
+                    position = (int) (Math.random() * 68);
+
+                    nextSongName = link[position].substring(44, link[position].length() - 4);
+
+                    songNameTV.setText(nextSongName);
+                    getAlbumSliku();
+
+                    fetchfromFirebase();
+                }
+            });
+        }
 
         // Updating positionBar (SeekBar)
         Slusanje.this.runOnUiThread(new Runnable() {
