@@ -1,30 +1,23 @@
 package com.sindikat.beogradski.beogradskisindikat;
 
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-public class ImageAdapter extends BaseAdapter {
+import jp.wasabeef.blurry.Blurry;
+
+public class ImageAdapterAlbumi extends BaseAdapter {
     private Context mContext;
 
-    Integer[] imageIDs = {
-            R.drawable.slika1, R.drawable.slika2,
-            R.drawable.slika3, R.drawable.slika4
-            // DODATI VISE SLIKA
-    };
-
-    public ImageAdapter(Context c) {
+    public ImageAdapterAlbumi(Context c) {
         mContext = c;
     }
 
     public int getCount() {
-        return imageIDs.length;
+        return mThumbIds.length;
     }
 
     public Object getItem(int position) {
@@ -38,20 +31,24 @@ public class ImageAdapter extends BaseAdapter {
     // create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView imageView;
-
         if (convertView == null) {
             // if it's not recycled, initialize some attributes
             imageView = new ImageView(mContext);
 
-            imageView.setLayoutParams(new GridView.LayoutParams(360, 640));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-
+            imageView.setLayoutParams(new GridView.LayoutParams(360, 360));
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         } else {
             imageView = (ImageView) convertView;
         }
 
-        imageView.setImageResource(imageIDs[position]);
-
+        imageView.setImageResource(mThumbIds[position]);
         return imageView;
     }
+
+    // references to our images
+    private Integer[] mThumbIds = {
+            R.drawable.album1, R.drawable.album2,
+            R.drawable.album3, R.drawable.album4,
+            R.drawable.album5, R.drawable.album6
+    };
 }

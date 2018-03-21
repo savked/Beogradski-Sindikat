@@ -30,7 +30,7 @@ public class Slike extends AppCompatActivity {
         });
 
         gridView = (GridView) findViewById(R.id.gridView);
-        gridView.setAdapter(new ImageAdapter(this));
+        gridView.setAdapter(new ImageAdapterSlike(this));
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent,

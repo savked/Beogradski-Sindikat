@@ -10,14 +10,14 @@
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Duga je ulica.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Divljina.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Slatke male maloletnice.mp3"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Z.DŽ.T.Š. (Iz budžeta miks.mp3"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Samo jedan život"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Z.DŽ.T.Š. (Iz budžeta miks).mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Samo jedan život.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Škabo maestro.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Znaj.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Na bojnom polju (Viteška 2).mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Zalazak trećeg sunca.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Gorila u magli.mp3"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Muzika/BS!BS.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/BS!BS!.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Plejersko ponašanje.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Misli o moći.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Nek nas ne zaborave.mp3"</item>
@@ -74,14 +74,18 @@
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Sistem te laže.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Kasno je.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Sindikalna priča.mp3"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Muzika/Pišam po sirotinji.mp3"</item>
     </string-array>
-    <string-array name="albumiSlike" >
-        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album1.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album2.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album3.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album4.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album5.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Albumi/album6.png"</item>
+    <string-array name="wallpapers">
+        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika1.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika2.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika3.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika4.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika5.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika6.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika7.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika8.png"</item>
+        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika9.png"</item>
     </string-array>
     <string name="title_activity_oaplikaciji">OAplikaciji</string>
 </resources>

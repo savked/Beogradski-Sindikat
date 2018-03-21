@@ -27,7 +27,8 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".Slike" />
         <activity android:name=".Slusanje" />
-        <activity android:name=".Muzika"></activity>
+        <activity android:name=".Muzika" />
+        <activity android:name=".Albumi"></activity>
     </application>
 
 </manifest>

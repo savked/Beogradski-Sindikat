@@ -34,7 +34,7 @@ public class HomeActivity extends AppCompatActivity {
                     overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
                 }
                 if(i == 1){
-                    Intent it = new Intent(HomeActivity.this, Muzika.class);
+                    Intent it = new Intent(HomeActivity.this, Albumi.class);
                     startActivity(it);
                 }
                 if(i == 2){
