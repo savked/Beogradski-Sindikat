@@ -7,8 +7,6 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import jp.wasabeef.blurry.Blurry;
-
 public class ImageAdapterAlbumi extends BaseAdapter {
     private Context mContext;
 
@@ -40,8 +38,8 @@ public class ImageAdapterAlbumi extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-
         imageView.setImageResource(mThumbIds[position]);
+
         return imageView;
     }
 

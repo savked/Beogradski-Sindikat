@@ -76,16 +76,87 @@
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Sindikalna priča.mp3"</item>
         <item>"gs://beogradski-sindikat.appspot.com/Muzika/Pišam po sirotinji.mp3"</item>
     </string-array>
-    <string-array name="wallpapers">
-        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika1.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika2.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika3.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika4.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika5.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika6.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika7.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika8.png"</item>
-        <item>"gs://beogradski-sindikat.appspot.com/Wallpapers/slika9.png"</item>
+    <string-array name="imenaPesama1">
+        <item>"Buđenje"</item>
+        <item>"Dolazi Sindikat"</item>
+        <item>"Duga je ulica"</item>
+        <item>"Divljina"</item>
+        <item>"Slatke male maloletnice"</item>
+        <item>"Z.DŽ.T.Š. (Iz budžeta miks)"</item>
+        <item>"Samo jedan život"</item>
+        <item>"Škabo maestro"</item>
+        <item>"Znaj"</item>
+        <item>"Na bojnom polju (Viteška 2)"</item>
+        <item>"Zalazak trećeg sunca"</item>
+        <item>"Gorila u magli"</item>
+        <item>"BS!BS!"</item>
+        <item>"Plejersko ponašanje"</item>
+        <item>"Misli o moći"</item>
+        <item>"Nek nas ne zaborave"</item>
+        <item>"Ko iz automata"</item>
+    </string-array>
+    <string-array name="imenaPesama2">
+        <item>"Govedina (Svi zajedno)"</item>
+        <item>"Goveđi mentalitet"</item>
+        <item>"Goveda repuju"</item>
+        <item>"Duga je muzika"</item>
+        <item>"Himna"</item>
+        <item>"Politička"</item>
+    </string-array>
+    <string-array name="imenaPesama3">
+        <item>"Krećemo u napad"</item>
+        <item>"Ja u životu imam sve"</item>
+        <item>"Zajedno"</item>
+        <item>"SBS"</item>
+        <item>"Deo prošlosti"</item>
+        <item>"Ljiga"</item>
+        <item>"Poroci Beograda"</item>
+        <item>"Život je prevara"</item>
+        <item>"Stotka"</item>
+        <item>"Alal vera"</item>
+        <item>"Samo za BGD"</item>
+        <item>"Niko ne može da zna"</item>
+        <item>"Od sranja se ne beži"</item>
+        <item>"Jednostavnost i suština"</item>
+        <item>"Pravo kroz vetar"</item>
+        <item>"Povratak"</item>
+        <item>"/Mi smo ta ekipa"</item>
+        <item>"Jebem li ti mater"</item>
+        <item>"Živina"</item>
+        <item>"Ale ale"</item>
+        <item>"Samo jedan dan"</item>
+    </string-array>
+    <string-array name="imenaPesama4">
+        <item>"Oni su"</item>
+        <item>"Pretorijanska garda"</item>
+        <item>"Već viđeno"</item>
+        <item>"Metalna prašina"</item>
+    </string-array>
+    <string-array name="imenaPesama5">
+        <item>"Početak"</item>
+        <item>"Za sve moje ljude"</item>
+        <item>"Svim srcem"</item>
+        <item>"Čovek"</item>
+        <item>"Gala-socijala"</item>
+        <item>"Glavom u zid"</item>
+        <item>"Zajebi"</item>
+        <item>"Tu sam ja"</item>
+        <item>"Pazi, pazi"</item>
+        <item>"Iskustvo"</item>
+        <item>"Osveta"</item>
+        <item>"Svedok (saradnik)"</item>
+        <item>"Welcome to Srbija"</item>
+        <item>"Olovni vojnici"</item>
+        <item>"Nema povlačenja, nema predaje"</item>
+        <item>"Balada disidenta"</item>
+        <item>"Još ovu noć"</item>
+    </string-array>
+    <string-array name="imenaPesama6">
+        <item>"BS Armija"</item>
+        <item>"Sistem te laže"</item>
+        <item>"Kasno je"</item>
+        <item>"Sindikalna priča"</item>
+        <item>"Pišam po sirotinji"</item>
     </string-array>
     <string name="title_activity_oaplikaciji">OAplikaciji</string>
 </resources>

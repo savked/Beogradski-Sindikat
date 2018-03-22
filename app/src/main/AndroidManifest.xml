@@ -28,7 +28,8 @@
         <activity android:name=".Slike" />
         <activity android:name=".Slusanje" />
         <activity android:name=".Muzika" />
-        <activity android:name=".Albumi"></activity>
+        <activity android:name=".Albumi" />
+        <activity android:name=".Pesme"></activity>
     </application>
 
 </manifest>
