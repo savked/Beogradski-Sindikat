@@ -5,20 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.ListView;
 
 public class Albumi extends AppCompatActivity {
 
-    private GridView albumiGrid;
+    private ListView albumiList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_albumi);
 
-        albumiGrid = (GridView) findViewById(R.id.albumiGrid);
-        albumiGrid.setAdapter(new ImageAdapterAlbumi(this));
+        albumiList = (ListView) findViewById(R.id.albumiList);
+        albumiList.setAdapter(new ImageAdapterAlbumi(this));
 
         ImageView bsShtit5 = (ImageView) findViewById(R.id.bsShtit5);
 
@@ -30,7 +30,7 @@ public class Albumi extends AppCompatActivity {
             }
         });
 
-        albumiGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        albumiList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 

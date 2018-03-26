@@ -1,11 +1,13 @@
 package com.sindikat.beogradski.beogradskisindikat;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ImageAdapterAlbumi extends BaseAdapter {
     private Context mContext;
@@ -26,27 +28,30 @@ public class ImageAdapterAlbumi extends BaseAdapter {
         return 0;
     }
 
-    // create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
-        ImageView imageView;
-        if (convertView == null) {
-            // if it's not recycled, initialize some attributes
-            imageView = new ImageView(mContext);
+        LayoutInflater inf = LayoutInflater.from(mContext);
+        View customView = inf.inflate(R.layout.custom_albumi, parent, false);
 
-            imageView.setLayoutParams(new GridView.LayoutParams(360, 360));
-            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-        } else {
-            imageView = (ImageView) convertView;
-        }
+        ImageView imageView = customView.findViewById(R.id.albumiSlika);
+        TextView textView = customView.findViewById(R.id.albumiIme);
+
+        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+
         imageView.setImageResource(mThumbIds[position]);
+        textView.setText(imenaAlbuma[position]);
 
-        return imageView;
+        return customView;
     }
 
-    // references to our images
+    // references to images
     private Integer[] mThumbIds = {
             R.drawable.album1, R.drawable.album2,
             R.drawable.album3, R.drawable.album4,
             R.drawable.album5, R.drawable.album6
+    };
+    private String[] imenaAlbuma = {
+            "BSSST... Tišinčina (2001)", "Govedina (2002)",
+            "Svi zajedno (2005)", "Oni su (2006)",
+            "Diskretni heroji (2010)", "Singlovi (2015+)"
     };
 }
