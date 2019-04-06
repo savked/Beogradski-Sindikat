@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "971736170817",
+    "firebase_url": "https://beogradski-sindikat.firebaseio.com",
+    "project_id": "beogradski-sindikat",
+    "storage_bucket": "beogradski-sindikat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971736170817:android:b9a4420ab76227ca",
+        "android_client_info": {
+          "package_name": "com.sindikat.beogradski.beogradskisindikat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971736170817-ni4musgqjka7osiufa0fepr3fs1cc510.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sindikat.beogradski.beogradskisindikat",
+            "certificate_hash": "e8388d6756f20bbb72fe6b98b8f7b939a4bcd068"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYSLHuf6LrWzbhtjiERmx3rrIWEOm-jd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971736170817-nq7mitcupahl9em4m2eio4spalgoojj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
