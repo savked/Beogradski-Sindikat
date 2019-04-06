@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sindikat.beogradski.beogradskisindikat.Slusanje">
+    tools:context=".ui.muzika.player.Slusanje">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

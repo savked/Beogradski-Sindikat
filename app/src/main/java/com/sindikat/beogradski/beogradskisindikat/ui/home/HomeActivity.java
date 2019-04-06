@@ -1,4 +1,4 @@
-package com.sindikat.beogradski.beogradskisindikat;
+package com.sindikat.beogradski.beogradskisindikat.ui.home;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import com.sindikat.beogradski.beogradskisindikat.ui.muzika.Albumi;
+import com.sindikat.beogradski.beogradskisindikat.ui.clanovi.ClanoviActivity;
+import com.sindikat.beogradski.beogradskisindikat.ui.oaplikaciji.OAplikaciji;
+import com.sindikat.beogradski.beogradskisindikat.R;
+import com.sindikat.beogradski.beogradskisindikat.ui.slike.SlikeActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -17,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-        String[] stavke = {"Članovi","Muzika","Slike","Nastupi","O aplikaciji"
+        String[] stavke = {"Članovi","Muzika","SlikeActivity","Nastupi","O aplikaciji"
         };
         ListAdapter adapter = new CustomAdapter2(this, stavke);
         ListView lv = (ListView) findViewById(R.id.listViewHome);
@@ -38,7 +44,7 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(it);
                 }
                 if(i == 2){
-                    Intent it = new Intent( HomeActivity.this, Slike.class);
+                    Intent it = new Intent( HomeActivity.this, SlikeActivity.class);
                     startActivity(it);
                 }
                 if(i == 4){

@@ -1,6 +1,8 @@
-package com.sindikat.beogradski.beogradskisindikat;
+package com.sindikat.beogradski.beogradskisindikat.ui.oaplikaciji;
 
 import android.os.Bundle;
+
+import com.sindikat.beogradski.beogradskisindikat.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

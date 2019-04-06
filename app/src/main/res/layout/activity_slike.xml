@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
     android:layout_height="match_parent"
-    tools:context="com.sindikat.beogradski.beogradskisindikat.Slike">
+    tools:context="com.sindikat.beogradski.beogradskisindikat.ui.slike.SlikeActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarbot"

@@ -1,4 +1,4 @@
-package com.sindikat.beogradski.beogradskisindikat;
+package com.sindikat.beogradski.beogradskisindikat.ui.muzika.pesme;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import com.sindikat.beogradski.beogradskisindikat.R;
+import com.sindikat.beogradski.beogradskisindikat.ui.home.HomeActivity;
 
 public class Pesme extends AppCompatActivity {
 

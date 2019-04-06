@@ -12,23 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ClanoviActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".ui.home.clanovi.ClanoviActivity" />
+        <activity android:name=".ui.home.HomeActivity" />
         <activity
-            android:name=".OAplikaciji"
+            android:name=".ui.oaplikaciji.OAplikaciji"
             android:label="@string/title_activity_oaplikaciji"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Slike" />
-        <activity android:name=".Slusanje" />
-        <activity android:name=".Albumi" />
-        <activity android:name=".Pesme"></activity>
+        <activity android:name=".ui.slike.SlikeActivity" />
+        <activity android:name=".ui.muzika.player.Slusanje" />
+        <activity android:name=".ui.muzika.Albumi" />
+        <activity android:name=".ui.muzika.pesme.Pesme"></activity>
     </application>
 
 </manifest>

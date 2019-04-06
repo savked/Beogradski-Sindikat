@@ -10,101 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99698c61-c597-49d9-a0a6-847f7ae34e3f" name="Default" comment="Migrated to AndroidX, Updated Gradle">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/utils/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/slike/SlikeActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/dare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/djolo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/fedja.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/marko.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ogi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/sefsale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/skabo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/slika1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/slika2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/slika3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/slika4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/album1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/album2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/album3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/album4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/album5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/album6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/dare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/djolo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/fedja.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/marko.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ogi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sefsale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/skabo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/slika1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/slika2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/slika3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/slika4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/album1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/album2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/album3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/album4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/album5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/album6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/dare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/djolo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/fedja.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/marko.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ogi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/sefsale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/skabo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/slika1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/slika2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/slika3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/slika4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/album1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/album2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/album3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/album4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/album5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/album6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/dare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/djolo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/fedja.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/marko.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ogi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/sefsale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/skabo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/slika1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/slika2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/slika3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/slika4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/album1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/album2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/album3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/album4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/album5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/album6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/dare.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/djolo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/fedja.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/marko.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ogi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/sefsale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/skabo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/slika1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/slika2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/slika3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/slika4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Albumi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/Albumi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/CustomAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/clanovi/CustomAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/CustomAdapter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/home/CustomAdapter2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/home/HomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapterAlbumi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/ImageAdapterAlbumi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapterSlike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ListAdapterPesme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/pesme/ListAdapterPesme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/main/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/OAplikaciji.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/oaplikaciji/OAplikaciji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Pesme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/pesme/Pesme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slusanje.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/player/Slusanje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/home/clanovi/ClanoviActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/util/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_albumi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_albumi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clanovi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clanovi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_oaplikaciji.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_oaplikaciji.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pesme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pesme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_slike.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_slike.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_slusanje.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_slusanje.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_oaplikaciji.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_oaplikaciji.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_albumi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_albumi.xml" afterDir="false" />
     </list>
     <ignored path="Beogradski Sindikat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,9 +88,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="12" />
+          <entry key="dummy" value="20" />
           <entry key="gradle" value="224" />
-          <entry key="java" value="51" />
+          <entry key="java" value="149" />
           <entry key="txt" value="59" />
           <entry key="xml" value="2" />
         </counts>
@@ -165,25 +98,25 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="224" />
-          <entry key="JAVA" value="51" />
-          <entry key="PLAIN_TEXT" value="71" />
+          <entry key="JAVA" value="149" />
+          <entry key="PLAIN_TEXT" value="79" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="2" />
-          <entry key="java" value="8" />
+          <entry key="java" value="22" />
           <entry key="png" value="3" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="2" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="8" />
-          <entry key="XML" value="5" />
+          <entry key="JAVA" value="22" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
     </session>
@@ -194,82 +127,108 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/pesme/Pesme.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="116" column="44" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+            <state relative-caret-position="234">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/ImageAdapterAlbumi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/main/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/slike/SlikeActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/clanovi/ClanoviActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/pesme/ListAdapterPesme.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/oaplikaciji/OAplikaciji.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/player/Slusanje.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_slusanje.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Pesme.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapterSlike.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapterAlbumi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slike.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/clanovi/CustomAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1746">
-              <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/utils/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -2061,17 +2020,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_slika_download.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/SlikaDownload.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_slike_download.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/SlikeDownload.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/okvirslike.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/MusicService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/seekbar_style.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/seekbar_progress.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/border_shadow.xml" />
-        <option value="$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-26/android.jar!/android/os/Handler.class" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/custom_thumb.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/image_shadow.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/izbor_pesama.java" />
@@ -2080,7 +2028,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_clanovi.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_slike.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ClanoviActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/FirebaseImageLoader.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_album.xml" />
@@ -2092,26 +2039,38 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_izbor_pesama.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ExpandableListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slike.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/BackgroundSoundService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slusanje.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/HomeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/CustomAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ListAdapterPesme.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Pesme.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pesme.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_albumi.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Albumi.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/font/opensans.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_albumi.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapterAlbumi.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/utils/Constants.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slike.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/SlikeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_albumi.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapterAlbumi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/activities/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/CustomAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ClanoviActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/home/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/albumi/ImageAdapterAlbumi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/pesme/ListAdapterPesme.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/player/Slusanje.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/slike/SlikeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/clanovi/ClanoviActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/clanovi/CustomAdapter.java" />
       </list>
     </option>
   </component>
@@ -2135,7 +2094,68 @@
           <expand>
             <path>
               <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="e9137016:NonAndroidModuleNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="beogradskisindikat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="beogradskisindikat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="beogradskisindikat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="clanovi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="beogradskisindikat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="muzika" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="beogradskisindikat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="muzika" type="462c0819:PsiDirectoryNode" />
+              <item name="pesme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="beogradskisindikat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="Beogradski-Sindikat" type="1abcf292:AndroidViewProjectNode" />
@@ -2169,6 +2189,9 @@
     <property name="sync.plugin.last.upgrade.timestamp" value="1516995991888" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.sindikat.beogradski.beogradskisindikat" />
+    </key>
     <key name="android.template.packageName">
       <recent name="com.sindikat.beogradski.beogradskisindikat" />
     </key>
@@ -2681,13 +2704,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.324295" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4935275" weight="0.32977462" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4978678" weight="0.32900432" />
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5042644" side_tool="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Logcat" order="9" sideWeight="0.49573562" weight="0.3286334" />
       <window_info anchor="bottom" id="Android Monitor" order="10" weight="0.32990867" />
@@ -2695,7 +2718,7 @@
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32900432" />
       <window_info anchor="bottom" id="Gradle Console" order="13" side_tool="true" weight="0.32900432" />
       <window_info active="true" anchor="bottom" id="Messages" order="14" visible="true" weight="0.324295" />
-      <window_info anchor="bottom" id="Build" order="15" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.329718" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -2788,15 +2811,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Migrated to AndroidX, Updated Gradle" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/OAplikaciji.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/setting_selector.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_expandable.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album6.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -2838,20 +2852,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Muzika.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_album.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_izbor_pesama.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/HomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/CustomAdapter2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -2860,23 +2860,8 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_slike.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ClanoviActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_clanovi.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -2889,13 +2874,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_muzika.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album4.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/CustomAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_albumi.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -2922,16 +2900,6 @@
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/font/opensansbold.ttf" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Albumi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_row.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -2941,36 +2909,51 @@
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/font/opensans.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_albumi.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album1.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/muzika.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="216">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_slusanje.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-anydpi/back.xml">
       <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slusanje.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/clanovi.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="370">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ListAdapterPesme.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="1746">
+          <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_slike.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapterSlike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -2982,12 +2965,6 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/album1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/muzika.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -2996,73 +2973,144 @@
       </provider>
       <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1746">
-          <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Pesme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_albumi.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/utils/Constants.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/util/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapterAlbumi.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/home/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        <state relative-caret-position="288">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-anydpi/back.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ImageAdapterSlike.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/home/CustomAdapter2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
+        <state relative-caret-position="72">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/clanovi.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/Slike.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/home/clanovi/ClanoviActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        <state relative-caret-position="576">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/Albumi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        <state relative-caret-position="252">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1048#1379#0" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/ImageAdapterAlbumi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/pesme/Pesme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/pesme/ListAdapterPesme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/oaplikaciji/OAplikaciji.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/muzika/player/Slusanje.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_slusanje.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/slike/SlikeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/clanovi/ClanoviActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sindikat/beogradski/beogradskisindikat/ui/clanovi/CustomAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>

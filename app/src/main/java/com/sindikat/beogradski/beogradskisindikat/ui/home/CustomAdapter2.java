@@ -1,4 +1,4 @@
-package com.sindikat.beogradski.beogradskisindikat;
+package com.sindikat.beogradski.beogradskisindikat.ui.home;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,43 +8,39 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-class CustomAdapter extends ArrayAdapter<String> {
+import com.sindikat.beogradski.beogradskisindikat.R;
 
-    CustomAdapter(Context context, String[] clanovi) {
-        super(context, R.layout.custom_row, clanovi);
+class CustomAdapter2 extends ArrayAdapter<String> {
+
+    CustomAdapter2(Context context, String[] stavke) {
+        super(context, R.layout.custom_row, stavke);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inf = LayoutInflater.from(getContext());
-        View customView = inf.inflate(R.layout.custom_row, parent, false);
+        View customView = inf.inflate(R.layout.custom_rowhome, parent, false);
 
         String single = getItem(position);
         TextView tv = (TextView) customView.findViewById(R.id.textViewCustom);
         ImageView iv = (ImageView) customView.findViewById(R.id.imageViewCustom);
 
         tv.setText(single);
-        switch (position){
+        switch (position) {
             case 0:
-                iv.setImageResource(R.drawable.fedja);
+                iv.setImageResource(R.drawable.clanovi);
                 break;
             case 1:
-                iv.setImageResource(R.drawable.ogi);
+                iv.setImageResource(R.drawable.muzika);
                 break;
             case 2:
-                iv.setImageResource(R.drawable.skabo);
+                iv.setImageResource(R.drawable.slike);
                 break;
             case 3:
-                iv.setImageResource(R.drawable.sefsale);
+                iv.setImageResource(R.drawable.nastupi);
                 break;
             case 4:
-                iv.setImageResource(R.drawable.marko);
-                break;
-            case 5:
-                iv.setImageResource(R.drawable.dare);
-                break;
-            case 6:
-                iv.setImageResource(R.drawable.djolo);
+                iv.setImageResource(R.drawable.oaplikaciji);
                 break;
         }
         return customView;

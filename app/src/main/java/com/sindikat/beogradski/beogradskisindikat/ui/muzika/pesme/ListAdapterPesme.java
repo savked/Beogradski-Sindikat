@@ -1,4 +1,4 @@
-package com.sindikat.beogradski.beogradskisindikat;
+package com.sindikat.beogradski.beogradskisindikat.ui.muzika.pesme;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.sindikat.beogradski.beogradskisindikat.R;
 
 /**
  * Created by savke on 22.03.2018..

@@ -1,4 +1,4 @@
-package com.sindikat.beogradski.beogradskisindikat;
+package com.sindikat.beogradski.beogradskisindikat.ui.muzika;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.sindikat.beogradski.beogradskisindikat.R;
+
 public class ImageAdapterAlbumi extends BaseAdapter {
     private Context mContext;
 
@@ -16,7 +18,7 @@ public class ImageAdapterAlbumi extends BaseAdapter {
     }
 
     public int getCount() {
-        return mThumbIds.length;
+        return imenaAlbuma.length;
     }
 
     public Object getItem(int position) {
@@ -36,18 +38,11 @@ public class ImageAdapterAlbumi extends BaseAdapter {
 
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
 
-        imageView.setImageResource(mThumbIds[position]);
+        //imageView.setImageResource(mThumbIds[position]);
         textView.setText(imenaAlbuma[position]);
 
         return customView;
     }
-
-    // references to images
-    private Integer[] mThumbIds = {
-            R.drawable.album1, R.drawable.album2,
-            R.drawable.album3, R.drawable.album4,
-            R.drawable.album5, R.drawable.album6
-    };
     private String[] imenaAlbuma = {
             "BSSST... Tišinčina (2001)", "Govedina (2002)",
             "Svi zajedno (2005)", "Oni su (2006)",

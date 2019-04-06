@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context="com.sindikat.beogradski.beogradskisindikat.OAplikaciji">
+    tools:context="com.sindikat.beogradski.beogradskisindikat.ui.oaplikaciji.OAplikaciji">
 
     <ImageView
         android:id="@+id/imageView2"

@@ -1,7 +1,9 @@
-package com.sindikat.beogradski.beogradskisindikat;
+package com.sindikat.beogradski.beogradskisindikat.ui.muzika.player;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.sindikat.beogradski.beogradskisindikat.R;
 
 public class Slusanje extends AppCompatActivity {
 

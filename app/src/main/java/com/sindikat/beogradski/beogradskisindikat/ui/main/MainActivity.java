@@ -1,10 +1,13 @@
-package com.sindikat.beogradski.beogradskisindikat;
+package com.sindikat.beogradski.beogradskisindikat.ui.main;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.sindikat.beogradski.beogradskisindikat.R;
+import com.sindikat.beogradski.beogradskisindikat.ui.home.HomeActivity;
 
 public class MainActivity extends AppCompatActivity {
 

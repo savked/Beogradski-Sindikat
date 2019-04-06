@@ -1,4 +1,4 @@
-package com.sindikat.beogradski.beogradskisindikat;
+package com.sindikat.beogradski.beogradskisindikat.ui.muzika;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+
+import com.sindikat.beogradski.beogradskisindikat.ui.muzika.pesme.Pesme;
+import com.sindikat.beogradski.beogradskisindikat.R;
+import com.sindikat.beogradski.beogradskisindikat.ui.home.HomeActivity;
 
 public class Albumi extends AppCompatActivity {
 
