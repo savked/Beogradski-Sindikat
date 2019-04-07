@@ -11,15 +11,13 @@ import com.sindikat.beogradski.beogradskisindikat.ui.home.HomeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button bt;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bt = (Button) findViewById(R.id.button);
-        bt.setOnClickListener(new View.OnClickListener() {
+        Button btnNext = (Button) findViewById(R.id.btn_next);
+        btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(MainActivity.this, HomeActivity.class);
